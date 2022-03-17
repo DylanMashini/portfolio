@@ -44,7 +44,7 @@ export default function Projects() {
 							</Col>
 						</Card.Header>
 						<Card.Image
-							src="/images/neat.png"
+							src="/images/Neat.png"
 							height={340}
 							width="100%"
 							alt="Card image background"
@@ -156,7 +156,7 @@ export default function Projects() {
 						</Card.Header>
 						<Card.Body>
 							<Card.Image
-								src="/images/portfolio.png"
+								src="/images/Portfolio.png"
 								height={400}
 								width="100%"
 								alt="Relaxing app background"
