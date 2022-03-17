@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ThemeProvider } from "next-themes";
 import { NextUIProvider, createTheme } from "@nextui-org/react";
 import { Grid, Spacer, Switch, useTheme } from "@nextui-org/react";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
 	const [isDark, setIsDark] = useState(true);
@@ -26,6 +27,12 @@ function MyApp({ Component, pageProps }) {
 			}}
 		>
 			<NextUIProvider>
+				<Head>
+					<meta
+						name="viewport"
+						content="initial-scale=1.0, width=device-width"
+					/>
+				</Head>
 				<Component {...pageProps} />
 			</NextUIProvider>
 		</ThemeProvider>
