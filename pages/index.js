@@ -4,8 +4,6 @@ import Link from "next/link";
 import DownArrow from "../components/shapes/downArrow";
 import { Grid, Spacer, Switch, useTheme } from "@nextui-org/react";
 import { useTheme as useNextTheme } from "next-themes";
-import Insta from "../components/shapes/insta";
-
 import Projects from "../components/projects";
 import { SP } from "next/dist/shared/lib/utils";
 import Moon from "../components/shapes/Moon";
