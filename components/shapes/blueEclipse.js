@@ -3,7 +3,7 @@ export default function blueEclipse({ width, height, mobile }) {
 	const svgHeight = Math.trunc(height * 0.81413612565);
 	let svgR = 338;
 	if (mobile) {
-		svgR = Math.trunc(width * 0.29649122807);
+		svgR = Math.trunc(width * 0.2);
 	}
 
 	return (
