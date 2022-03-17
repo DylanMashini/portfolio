@@ -7,6 +7,7 @@ import Projects from "../components/projects";
 import { useState, useEffect } from "react";
 
 export default function Home() {
+	const isProd = process.env.NODE_ENV == "production";
 	const [mobile, setMobile] = useState(false);
 	const [width, setWidth] = useState(764);
 	const [height, setHeight] = useState(440);
@@ -19,10 +20,17 @@ export default function Home() {
 			setMobile(false);
 		}
 	};
-	useEffect(() => {
-		getMobile();
-		window.addEventListener("resize", getMobile);
-	});
+	if (!isProd) {
+		useEffect(() => {
+			getMobile();
+			window.addEventListener("resize", getMobile);
+		});
+	} else {
+		useEffect(() => {
+			getMobile();
+		});
+	}
+
 	return (
 		<div>
 			<div
