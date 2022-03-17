@@ -23,8 +23,8 @@ export default function blueEclipse() {
 					gradientUnits="userSpaceOnUse"
 					gradientTransform="translate(167.093 71.75) rotate(102.035) scale(561.593)"
 				>
-					<stop stop-color="#17B3A9" />
-					<stop offset="1" stop-color="#0945DF" />
+					<stop stopColor="#17B3A9" />
+					<stop offset="1" stopColor="#0945DF" />
 				</radialGradient>
 			</defs>
 		</svg>
