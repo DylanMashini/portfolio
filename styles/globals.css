@@ -79,3 +79,17 @@ a {
 	-webkit-backdrop-filter: blur(30px);
 	backdrop-filter: blur(30px);
 }
+.navbar-light {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(207, 207, 207, 0.5);
+	backdrop-filter: blur(10px);
+	height: 8%;
+	text-align: right;
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

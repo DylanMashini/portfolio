@@ -172,7 +172,7 @@ export default function Navbar({ mobile }) {
 
 		return (
 			<div
-				className="navbar"
+				className={isDark ? "navbar" : "navbar-light"}
 				style={{
 					justifyContent: "left",
 					alignItems: "left",
@@ -186,7 +186,7 @@ export default function Navbar({ mobile }) {
 		);
 	}
 	return (
-		<div className="navbar">
+		<div className={isDark ? "navbar" : "navbar-light"}>
 			<Grid.Container justify="left">
 				<Grid>
 					<Link href="/about">
