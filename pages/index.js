@@ -45,6 +45,7 @@ export default function Home() {
 				<BlueEclipse width={width} height={height} mobile={mobile} />
 				<OrangeEclipse width={width} height={height} />
 				<div
+					className="glass"
 					style={{
 						position: "absolute",
 						top: "50%",
