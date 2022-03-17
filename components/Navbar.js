@@ -123,7 +123,7 @@ export default function Navbar({ mobile }) {
 							width: "30vh",
 							position: "fixed",
 							right: "0px",
-							top: "30%",
+							top: "2.5vh",
 						}}
 					>
 						<a
