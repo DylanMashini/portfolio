@@ -63,8 +63,9 @@ export default function Home() {
 					>
 						<h1>Hi, I'm Dylan</h1>
 						<h3>
-							I'm a full stack software developer based in
-							Atlanta.
+							{mobile
+								? "I'm a full stack software developer."
+								: "I'm a full stack software developer based in Atlanta."}
 						</h3>
 					</div>
 					<div className={"down-arrow"}>
