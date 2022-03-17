@@ -4,11 +4,20 @@ import Router from "next/router";
 export default function Projects({ width }) {
 	return (
 		<div
+			id="projects"
 			className="scrollContainer"
 			style={{
 				display: "inline-block",
 			}}
 		>
+			<h1
+				style={{
+					textAlign: "center",
+					marginTop: "50px",
+				}}
+			>
+				My Projects
+			</h1>
 			<Grid.Container
 				gap={2}
 				justify="center"
@@ -150,11 +159,11 @@ export default function Projects({ width }) {
 									size={12}
 									weight="bold"
 									transform="uppercase"
-									color="#9E9E9E"
+									color="black"
 								>
 									Javascript
 								</Text>
-								<Text h3 color="white">
+								<Text h3 color="black">
 									Portfolio Page
 								</Text>
 							</Col>

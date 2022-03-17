@@ -55,10 +55,18 @@ export default function Navbar({ mobile }) {
 		const Menu = ({ open }) => {
 			return (
 				<StyledMenu open={open}>
-					<a href="/">Home</a>
-					<a href="/">Projects</a>
-					<a href="/">About Me</a>
-					<a href="/">Contact Me</a>
+					<Link href="/">
+						<a>Home</a>
+					</Link>
+					<Link href="/#Projects">
+						<a>Projects</a>
+					</Link>
+					<Link href="/">
+						<a>About Me</a>
+					</Link>
+					<Link href="/">
+						<a>Contact Me</a>
+					</Link>
 				</StyledMenu>
 			);
 		};
@@ -189,12 +197,12 @@ export default function Navbar({ mobile }) {
 		<div className={isDark ? "navbar" : "navbar-light"}>
 			<Grid.Container justify="left">
 				<Grid>
-					<Link href="/about">
+					<Link href="/">
 						<h2 className="nav-item">Home</h2>
 					</Link>
 				</Grid>
 				<Grid>
-					<Link href="/about">
+					<Link href="/#projects">
 						<h2 className="nav-item">Projects</h2>
 					</Link>
 				</Grid>
@@ -204,7 +212,7 @@ export default function Navbar({ mobile }) {
 					</Link>
 				</Grid>
 				<Grid>
-					<Link href="/about">
+					<Link href="/contact">
 						<h2 className="nav-item">Contact Me</h2>
 					</Link>
 				</Grid>
