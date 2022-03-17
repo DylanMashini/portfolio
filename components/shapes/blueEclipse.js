@@ -1,16 +1,23 @@
-export default function blueEclipse() {
+export default function blueEclipse({ width, height, mobile }) {
+	const svgWidth = Math.trunc(width * 0.34122807017);
+	const svgHeight = Math.trunc(height * 0.81413612565);
+	let svgR = 338;
+	if (mobile) {
+		svgR = Math.trunc(width * 0.29649122807);
+	}
+
 	return (
 		<svg
-			width="389"
-			height="622"
-			viewBox="0 0 389 622"
+			width={`${svgWidth}`}
+			height={`${svgHeight}`}
+			viewBox={`0 0 ${svgWidth} ${svgHeight}`}
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
 			<circle
 				cx="50"
 				cy="283"
-				r="338"
+				r={`${svgR}`}
 				transform="rotate(30 50 283)"
 				fill="url(#paint0_diamond_4_49)"
 			/>

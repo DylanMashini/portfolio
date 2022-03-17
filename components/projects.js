@@ -1,7 +1,7 @@
 import "../styles/projects.module.css";
 import { Card, Grid, Col, Row, Button, Text } from "@nextui-org/react";
 import Router from "next/router";
-export default function Projects() {
+export default function Projects({ width }) {
 	return (
 		<div
 			className="scrollContainer"
@@ -25,6 +25,7 @@ export default function Projects() {
 						onClick={() => {
 							Router.push("/projects/neat-car-game");
 						}}
+						css={{ maxWidth: `${width - 7}px` }}
 					>
 						<Card.Header
 							css={{ position: "absolute", zIndex: 1, top: 5 }}
@@ -58,7 +59,11 @@ export default function Projects() {
 						cover
 						hoverable
 						clickable
-						css={{ bg: "$black", w: "100%" }}
+						css={{
+							bg: "$black",
+							w: "100%",
+							maxWidth: `${width - 7}px`,
+						}}
 						onClick={() => {
 							Router.push("/projects/ecommerce");
 						}}
@@ -94,7 +99,7 @@ export default function Projects() {
 						cover
 						hoverable
 						clickable
-						css={{ w: "100%" }}
+						css={{ w: "100%", maxWidth: `${width - 7}px` }}
 						onClick={() => {
 							Router.push("/projects/lane-lines");
 						}}
@@ -132,7 +137,7 @@ export default function Projects() {
 						cover
 						hoverable
 						clickable
-						css={{ w: "100%", p: 0 }}
+						css={{ w: "100%", p: 0, maxWidth: `${width - 7}px` }}
 						onClick={() => {
 							Router.push("/projects/portfolio");
 						}}

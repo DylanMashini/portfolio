@@ -1,15 +1,18 @@
-export default function orangeEclipse() {
+export default function orangeEclipse({ width, height }) {
+	const svgWidth = Math.trunc(width * 0.40526315789);
+	const svgHeight = Math.trunc(height * 0.88612565445);
+	console.log(width, height);
 	return (
 		<svg
-			width="462"
-			height="677"
-			viewBox="0 0 462 677"
+			width={`${svgWidth}`}
+			height={`${svgHeight}`}
+			viewBox={`0 0 ${svgWidth} ${svgHeight}`}
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 			style={{
 				position: "absolute",
 				bottom: "-300",
-				right: "0",
+				right: "0px",
 			}}
 		>
 			<circle
