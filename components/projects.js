@@ -1,6 +1,7 @@
 import "../styles/projects.module.css";
 import { Card, Grid, Col, Row, Button, Text } from "@nextui-org/react";
 import Router from "next/router";
+import { useState } from "react";
 export default function Projects({ width }) {
 	return (
 		<div
