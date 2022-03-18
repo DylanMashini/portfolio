@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 export default function Projects() {
 	const isProd = process.env.NODE_ENV == "production";
 	const [mobile, setMobile] = useState(false);
