@@ -198,22 +198,22 @@ export default function Navbar({ mobile }) {
 			<Grid.Container justify="left">
 				<Grid>
 					<Link href="/">
-						<h2 className="nav-item">Home</h2>
+						<h3 className="nav-item">Home</h3>
 					</Link>
 				</Grid>
 				<Grid>
 					<Link href="/#projects">
-						<h2 className="nav-item">Projects</h2>
+						<h3 className="nav-item">Projects</h3>
 					</Link>
 				</Grid>
 				<Grid>
 					<Link href="/about">
-						<h2 className="nav-item">About Me</h2>
+						<h3 className="nav-item">About Me</h3>
 					</Link>
 				</Grid>
 				<Grid>
 					<Link href="/contact">
-						<h2 className="nav-item">Contact Me</h2>
+						<h3 className="nav-item">Contact Me</h3>
 					</Link>
 				</Grid>
 			</Grid.Container>
