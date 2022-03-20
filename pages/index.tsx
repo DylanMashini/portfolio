@@ -5,12 +5,15 @@ import DownArrow from "../components/shapes/downArrow";
 import Navbar from "../components/Navbar";
 import Projects from "../components/projects";
 import { useState, useEffect } from "react";
+import Bio from "../components/Bio";
+import Contact from "../components/Contact";
 
 export default function Home() {
 	const isProd = process.env.NODE_ENV == "production";
 	const [mobile, setMobile] = useState(false);
 	const [width, setWidth] = useState(764);
 	const [height, setHeight] = useState(440);
+	const [contactOpen, setContactOpen] = useState(false);
 	const getMobile = () => {
 		setWidth(window.innerWidth);
 		setHeight(window.innerHeight);
@@ -61,7 +64,7 @@ export default function Home() {
 				>
 					<div
 						style={{
-							position: "relative",
+							// position: "relative",
 							margin: "0",
 							position: "absolute",
 							top: "50%",
@@ -86,6 +89,11 @@ export default function Home() {
 			<div className={"projects"}>
 				<Projects width={width} />
 			</div>
+			<div className={"bio"}>
+				{/* <Bio /> */}
+			</div>
+			<Contact />
+
 		</div>
 	);
 }

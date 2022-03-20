@@ -111,7 +111,9 @@ export default function Projects({ width }) {
 						clickable
 						css={{ w: "100%", maxWidth: `${width - 7}px` }}
 						onClick={() => {
-							Router.push("/projects/lane-lines");
+							Router.push("/projects/lane-lines/#0").then(() =>
+								window.scrollTo(0, 0)
+							);
 						}}
 					>
 						<Card.Header

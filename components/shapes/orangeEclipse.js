@@ -1,7 +1,6 @@
 export default function orangeEclipse({ width, height }) {
 	const svgWidth = Math.trunc(width * 0.40526315789);
 	const svgHeight = Math.trunc(height * 0.88612565445);
-	console.log(width, height);
 	return (
 		<svg
 			width={`${svgWidth}`}

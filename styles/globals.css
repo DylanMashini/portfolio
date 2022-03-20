@@ -1,5 +1,6 @@
 html,
 body {
+	scroll-behavior: smooth;
 	padding: 0;
 	margin: 0;
 	height: 100vh;
@@ -14,6 +15,7 @@ html {
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
+	scroll-behavior: smooth;
 }
 
 a {
@@ -92,4 +94,54 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.project-page {
+	position: absolute;
+}
+.bio {
+	height: 20vh;
+	margin-top: 20vh;
+}
+.contactWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contact {
+	transition: height 0.3s;
+	background-color: #1fd1f9;
+	background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+	height: 40vh;
+	width: 40vw;
+	margin-bottom: 5vh;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.contact.full {
+	height: 80vh;
+	width: 40vw;
+}
+.contact-page {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+
+	/* background-color: #1fd1f9;
+	background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%); */
+}
+.contact-page-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10vh;
+}
+.contact-page-content-inner {
+	text-align: center;
 }

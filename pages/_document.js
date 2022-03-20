@@ -19,6 +19,7 @@ class MyDocument extends Document {
 						rel="stylesheet"
 						href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
 					/>
+					<link href="/prism.css" rel="stylesheet" />
 				</Head>
 				<body>
 					<Main />

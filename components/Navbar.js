@@ -61,10 +61,10 @@ export default function Navbar({ mobile }) {
 					<Link href="/#Projects">
 						<a>Projects</a>
 					</Link>
-					<Link href="/">
+					<Link href="/#about">
 						<a>About Me</a>
 					</Link>
-					<Link href="/">
+					<Link href="/#contact">
 						<a>Contact Me</a>
 					</Link>
 				</StyledMenu>
@@ -207,12 +207,12 @@ export default function Navbar({ mobile }) {
 					</Link>
 				</Grid>
 				<Grid>
-					<Link href="/about">
+					<Link href="/#about">
 						<h3 className="nav-item">About Me</h3>
 					</Link>
 				</Grid>
 				<Grid>
-					<Link href="/contact">
+					<Link href="/#contact">
 						<h3 className="nav-item">Contact Me</h3>
 					</Link>
 				</Grid>
