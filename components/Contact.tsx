@@ -51,7 +51,7 @@ export default function Contact() {
 					<div style={{
 						marginTop:"0vh"
 					}}>
-						<Textarea bordered labelPlaceholder="Message" helperText={formHelperText} color={formColor2 ? "error" : "default"} minRows={10} value={formText} css={{width:"20vw", marginTop: "3vh"}} onChange={(e) => {
+						<Textarea bordered labelPlaceholder="Message" helperText={formHelperText} color={formColor2 ? "error" : "default"} minRows={10} value={formText} css={{ marginTop: "3vh"}} onChange={(e) => {
 							setFormText(e.target.value)
 							setFormColor2(false)
 						}} />

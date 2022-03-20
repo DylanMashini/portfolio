@@ -86,13 +86,16 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<div className={"projects"}>
-				<Projects width={width} />
+			<div>
+				<div className={"projects"}>
+					<Projects width={width} />
+				</div>
+				<div className={"bio"}>
+					{/* <Bio /> */}
+					<Contact />
+				</div>
 			</div>
-			<div className={"bio"}>
-				{/* <Bio /> */}
-			</div>
-			<Contact />
+			
 
 		</div>
 	);

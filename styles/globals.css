@@ -44,8 +44,9 @@ a {
 	bottom: 2px;
 }
 .projects {
+	position: relative;
 	/* margin-top: 50%; */
-	height: 100vh;
+	/* height: 100vh; */
 }
 .clickable:hover {
 	cursor: pointer;
@@ -100,8 +101,10 @@ a {
 	position: absolute;
 }
 .bio {
-	height: 20vh;
-	margin-top: 20vh;
+	position: relative;
+
+	/* height: 20vh; */
+	margin-top: 10vh;
 }
 .contactWrapper {
 	display: flex;
@@ -113,7 +116,7 @@ a {
 	background-color: #1fd1f9;
 	background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 	height: 40vh;
-	width: 40vw;
+
 	margin-bottom: 5vh;
 	border-radius: 20px;
 	display: flex;
@@ -121,9 +124,18 @@ a {
 	justify-content: center;
 	text-align: center;
 }
+@media (min-width: 801px) {
+	.contact {
+		width: 40vw;
+	}
+}
+@media (max-width: 800px) {
+	.contact {
+		width: 90vw;
+	}
+}
 .contact.full {
 	height: 80vh;
-	width: 40vw;
 }
 .contact-page {
 	position: absolute;
