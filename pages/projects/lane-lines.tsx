@@ -37,6 +37,10 @@ export default function Lane() {
 			<Script src={"/prism.js"} />
 			<style jsx>
 				{`
+
+
+				
+
 				a {
 					text-decoration: underline;
 					
@@ -49,10 +53,7 @@ export default function Lane() {
 				
 				`}
 			</style>
-			{/* <Head>
-				<Script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/addon/runmode/runmode-standalone.min.js" />
-				<Script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/mode/python/python.min.js" />
-			</Head> */}
+			
             <Navbar mobile={mobile}/>
             <div className="project-page-content" style={{
                 marginTop: "9vh"

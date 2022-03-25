@@ -57,6 +57,12 @@ export default function Contact() {
 						}} />
 					</div>
                     </div> : null}
+                    <div style={{
+                        width:"100%",
+                        display:"flex",
+                        justifyContent:"center",
+                        alignContent:"center",
+                    }}>
                     <Button style={{width: "20vw", marginTop: "3vh"}} onClick={() => {
                         if (formText == '') {
                             setFormHelperText("Please enter a message")
@@ -88,6 +94,7 @@ export default function Contact() {
                         
                         
                     }}>Continue</Button>
+                    </div>
                     
                     </div>
 

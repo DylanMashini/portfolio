@@ -9,4 +9,7 @@ export default async function Contact(req:NextApiRequest, res:NextApiResponse) {
     const email = req.body.email;
     const message = req.body.message;
     console.log(email)
+    res.status(200).json({
+        message: "success"
+    })
 }  

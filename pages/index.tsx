@@ -91,7 +91,7 @@ export default function Home() {
 					<Projects width={width} />
 				</div>
 				<div className={"bio"}>
-					{/* <Bio /> */}
+					<Bio />
 					<Contact />
 				</div>
 			</div>
