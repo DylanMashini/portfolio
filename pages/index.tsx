@@ -7,6 +7,8 @@ import Projects from "../components/projects";
 import { useState, useEffect } from "react";
 import Bio from "../components/Bio";
 import Contact from "../components/Contact";
+import OrangeEclipseMobile from "../components/shapes/orangeEclipseMobile";
+import BlueEclipseMobile from "../components/shapes/blueEclipseMobile";
 
 export default function Home() {
 	const isProd = process.env.NODE_ENV == "production";
@@ -14,6 +16,7 @@ export default function Home() {
 	const [width, setWidth] = useState(764);
 	const [height, setHeight] = useState(440);
 	const [contactOpen, setContactOpen] = useState(false);
+
 	const getMobile = () => {
 		setWidth(window.innerWidth);
 		setHeight(window.innerHeight);
@@ -45,8 +48,18 @@ export default function Home() {
 				}}
 			>
 				<Navbar mobile={mobile} />
-				<BlueEclipse width={width} height={height} mobile={mobile} />
-				<OrangeEclipse width={width} height={height} />
+				{mobile ? 
+				<div>
+					<OrangeEclipseMobile />
+					<BlueEclipseMobile />
+				</div>
+				: 
+				<div>
+					<BlueEclipse width={width} height={height} mobile={mobile} />
+					<OrangeEclipse width={width} height={height} />
+				</div>
+				}
+				
 				<div
 					className="glass"
 					style={{
