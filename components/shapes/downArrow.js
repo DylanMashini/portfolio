@@ -1,13 +1,14 @@
 import Link from "next/link";
 export default function downArrow() {
 	return (
-		<Link href="/#projects" className={"clickable"}>
+		<Link href="/#projects">
 			<svg
 				width="50"
 				height="50"
 				viewBox="0 0 50 50"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
+				className={"clickable"}
 			>
 				<g clipPath="url(#clip0_18_16)">
 					<path
