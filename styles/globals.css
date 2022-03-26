@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 html,
 body {
 	scroll-behavior: smooth;
@@ -156,4 +157,14 @@ a {
 }
 .contact-page-content-inner {
 	text-align: center;
+}
+
+pre {
+	font-size: 1rem;
+	line-height: 1.2rem;
+	tab-size: 4;
+	white-space: pre-wrap;
+	background-color: #13192c;
+	margin: 1em;
+	font-family: "Fira Code", monospace;
 }

@@ -15,10 +15,10 @@ function MyApp({ Component, pageProps }) {
 	const darkTheme = createTheme({
 		type: "dark",
 		theme: {
-                    colors: {
-                        background: '#081B33'
-}
-},
+			colors: {
+				background: "#081B33",
+			},
+		},
 	});
 
 	return (

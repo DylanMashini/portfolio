@@ -34,7 +34,7 @@ export default function Lane() {
         <div className="project-page" id="0" style={{
 			scrollBehavior: "auto"
 		}}>
-			<Script src={"/prism.js"} />
+			{/* <Script src={"/prism.js"} /> */}
 			<style jsx>
 				{`
 
