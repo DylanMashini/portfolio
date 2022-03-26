@@ -3,6 +3,7 @@ import Router from 'next/router';
 import {useState} from 'react';
 import server from '../server';
 export default function Contact() {
+    type color = 'primary' | 'secondary' | 'success' | 'warning' | 'default' | 'error' | 'gradient' | 'primary' | 'secondary' | 'success' | 'warning' | 'default' | 'error' | 'gradient';
     const [email, setEmail] = useState('');
     const [formColor, setFormColor] = useState(false);
     const [helperText, setHelperText] = useState('');
@@ -18,11 +19,19 @@ export default function Contact() {
     const [formText, setFormText] = useState('')
     const [formHelperText, setFormHelperText] = useState('')
     const [formColor2, setFormColor2] = useState(false)
+    const [buttonColor, setButtonColor] = useState<color>("default")
+
     const validateEmail = (input) => {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
         return re.test(input)
     }
+    const submitButton = async () => {
 
+        setButtonColor("success");
+        setTimeout(() => {
+            setButtonColor("default");
+        }, 2500)
+    }
     return(
         <div style={{textAlign: 'center'}}>
             <h1>Contact Me</h1>
@@ -63,7 +72,7 @@ export default function Contact() {
                         justifyContent:"center",
                         alignContent:"center",
                     }}>
-                    <Button style={{width: "20vw", marginTop: "3vh"}} onClick={() => {
+                    <Button color={buttonColor} style={{width: "20vw", marginTop: "3vh"}} onClick={() => {
                         if (formText == '') {
                             setFormHelperText("Please enter a message")
                             setFormColor2(true)
@@ -85,6 +94,7 @@ export default function Contact() {
                                 setFormText('')
                                 setHelperText('')
                                 setHelperText2('')
+                                submitButton();
                             }
                             
                         } else {
@@ -93,7 +103,7 @@ export default function Contact() {
                         }
                         
                         
-                    }}>Continue</Button>
+                    }}>{(buttonColor == "default") ? "Continue" : "Message Sent"}</Button>
                     </div>
                     
                     </div>
