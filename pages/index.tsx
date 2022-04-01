@@ -9,7 +9,7 @@ import Bio from "../components/Bio";
 import Contact from "../components/Contact";
 import OrangeEclipseMobile from "../components/shapes/orangeEclipseMobile";
 import BlueEclipseMobile from "../components/shapes/blueEclipseMobile";
-
+import Head from "next/head";
 export default function Home() {
 	const isProd = process.env.NODE_ENV == "production";
 	const [mobile, setMobile] = useState(false);
@@ -39,6 +39,9 @@ export default function Home() {
 
 	return (
 		<div>
+			<Head>
+				<title>Dylan Mashini's Portfolio</title>
+			</Head>
 			<div
 				style={{
 					position: "relative",

@@ -5,7 +5,6 @@ import Moon from "./shapes/Moon";
 import Sun from "./shapes/Sun";
 import { useState } from "react";
 import styled from "styled-components";
-
 export default function Navbar({ mobile }) {
 	const { isDark, type } = useTheme();
 	const { setTheme } = useNextTheme();
