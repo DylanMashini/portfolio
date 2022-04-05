@@ -3,6 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 export default async function Contact(req:NextApiRequest, res:NextApiResponse) {
     console.log("here")
     if (req.method != "POST") {
+        console.error("bad status")
         res.status(405).end("Method not allowed");
         return;
     }
