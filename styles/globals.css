@@ -168,3 +168,70 @@ pre {
 	margin: 1em;
 	font-family: "Fira Code", monospace;
 }
+/* sets image for portfolio card based on webp support */
+.no-webp .portfolio-card {
+	background-image: url(/images/Portfolio.png);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: 650px;
+}
+
+.webp .portfolio-card {
+	background-image: url(/images/Portfolio.webp);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: 650px;
+}
+
+/* sets image for lane card based on webp support */
+.no-webp .lane-card {
+	background-image: url(/images/lane.png);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: 650px;
+}
+
+.webp .lane-card {
+	background-image: url(/images/lane.webp);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: 650px;
+}
+
+/* sets image for lane card based on webp support */
+.no-webp .ecommerce-card {
+	background-image: url(/images/Ecommerce.png);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: 650px;
+}
+
+.webp .ecommerce-card {
+	background-image: url(/images/Ecommerce.webp);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: 650px;
+}
+
+/* sets image for neat card based on webp support */
+.no-webp .neat-card {
+	background-image: url(/images/Neat.png);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: 650px;
+}
+
+.webp .neat-card {
+	background-image: url(/images/Neat.webp);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: 650px;
+}

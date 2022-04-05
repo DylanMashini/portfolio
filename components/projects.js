@@ -3,6 +3,8 @@ import { Card, Grid, Col, Row, Button, Text } from "@nextui-org/react";
 import Router from "next/router";
 import { useState } from "react";
 import Image from "next/image";
+import styles from "../styles/projects.module.css";
+
 export default function Projects({ width }) {
 	return (
 		<div
@@ -30,6 +32,7 @@ export default function Projects({ width }) {
 				{/* Card 1 */}
 				<Grid xs={11} sm={5}>
 					<Card
+						className={"neat-card"}
 						hoverable
 						clickable
 						cover
@@ -55,18 +58,19 @@ export default function Projects({ width }) {
 								</Text>
 							</Col>
 						</Card.Header>
-						<Card.Image
+						{/* <Card.Image
 							src="/images/Neat.png"
 							height={340}
 							width="100%"
 							alt="Card image background"
-						/>
+						/> */}
 					</Card>
 				</Grid>
 
 				{/* Card 2 */}
 				<Grid xs={11} sm={5}>
 					<Card
+						className="ecommerce-card"
 						cover
 						hoverable
 						clickable
@@ -96,17 +100,18 @@ export default function Projects({ width }) {
 								</Text>
 							</Col>
 						</Card.Header>
-						<Card.Image
+						{/* <Card.Image
 							src="/images/Ecommerce.png"
 							height={340}
 							width={650}
 							alt="Card image background"
-						/>
+						/> */}
 					</Card>
 				</Grid>
 				{/* Card 3 */}
 				<Grid xs={11} sm={5}>
 					<Card
+						className="lane-card"
 						cover
 						hoverable
 						clickable
@@ -135,22 +140,27 @@ export default function Projects({ width }) {
 							</Col>
 						</Card.Header>
 						<Card.Body>
-							<Card.Image
+							{/* <Card.Image
 								src="/images/lane.png"
 								height={400}
 								width="100%"
 								alt="Card example background"
-							/>
+							/> */}
 						</Card.Body>
 					</Card>
 				</Grid>
 				{/* Card 4 */}
 				<Grid xs={11} sm={5}>
 					<Card
+						className="portfolio-card"
 						cover
 						hoverable
 						clickable
-						css={{ w: "100%", p: 0, maxWidth: `${width - 7}px` }}
+						css={{
+							w: "100%",
+							p: 0,
+							maxWidth: `${width - 7}px`,
+						}}
 						onClick={() => {
 							Router.push("/projects/portfolio");
 						}}
@@ -173,14 +183,11 @@ export default function Projects({ width }) {
 							</Col>
 						</Card.Header>
 						<Card.Body>
-							<Card.Image
+							{/* <Card.Image
 								src="/images/Portfolio.png"
 								height={400}
 								width="100%"
-								layout="fill"
-								objectFit="cover"
-								as={Image}
-							/>
+							/> */}
 						</Card.Body>
 					</Card>
 				</Grid>

@@ -4,7 +4,7 @@ import { ThemeProvider } from "next-themes";
 import { NextUIProvider, createTheme } from "@nextui-org/react";
 import { Grid, Spacer, Switch, useTheme } from "@nextui-org/react";
 import Head from "next/head";
-
+import Script from "next/script";
 function MyApp({ Component, pageProps }) {
 	const [isDark, setIsDark] = useState(true);
 	const lightTheme = createTheme({
@@ -37,6 +37,8 @@ function MyApp({ Component, pageProps }) {
 						content="initial-scale=1.0, width=device-width"
 					/>
 				</Head>
+				<Script src="/modernizr-custom.js" />
+
 				<Component {...pageProps} />
 			</NextUIProvider>
 		</ThemeProvider>
