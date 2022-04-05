@@ -2,6 +2,7 @@ import "../styles/projects.module.css";
 import { Card, Grid, Col, Row, Button, Text } from "@nextui-org/react";
 import Router from "next/router";
 import { useState } from "react";
+import Image from "next/image";
 export default function Projects({ width }) {
 	return (
 		<div
@@ -27,7 +28,7 @@ export default function Projects({ width }) {
 				}}
 			>
 				{/* Card 1 */}
-				<Grid xs={12} sm={5}>
+				<Grid xs={11} sm={5}>
 					<Card
 						hoverable
 						clickable
@@ -64,7 +65,7 @@ export default function Projects({ width }) {
 				</Grid>
 
 				{/* Card 2 */}
-				<Grid xs={12} sm={5}>
+				<Grid xs={11} sm={5}>
 					<Card
 						cover
 						hoverable
@@ -104,7 +105,7 @@ export default function Projects({ width }) {
 					</Card>
 				</Grid>
 				{/* Card 3 */}
-				<Grid xs={12} sm={5}>
+				<Grid xs={11} sm={5}>
 					<Card
 						cover
 						hoverable
@@ -144,7 +145,7 @@ export default function Projects({ width }) {
 					</Card>
 				</Grid>
 				{/* Card 4 */}
-				<Grid xs={12} sm={5}>
+				<Grid xs={11} sm={5}>
 					<Card
 						cover
 						hoverable
@@ -176,7 +177,9 @@ export default function Projects({ width }) {
 								src="/images/Portfolio.png"
 								height={400}
 								width="100%"
-								alt="Relaxing app background"
+								layout="fill"
+								objectFit="cover"
+								as={Image}
 							/>
 						</Card.Body>
 					</Card>
