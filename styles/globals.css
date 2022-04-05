@@ -170,7 +170,7 @@ pre {
 }
 /* sets image for portfolio card based on webp support */
 .no-webp .portfolio-card {
-	background-image: url(/images/Portfolio.png);
+	background-image: url(/images/portfolio.png);
 	background-size: cover;
 	background-position: center;
 	height: 400px;
@@ -178,7 +178,7 @@ pre {
 }
 
 .webp .portfolio-card {
-	background-image: url(/images/Portfolio.webp);
+	background-image: url(/images/portfolio.webp);
 	background-size: cover;
 	background-position: center;
 	height: 400px;
