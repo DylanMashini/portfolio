@@ -68,46 +68,7 @@ export default function Projects({ width }) {
 				</Grid>
 
 				{/* Card 2 */}
-				<Grid xs={11} sm={5}>
-					<Card
-						className="ecommerce-card"
-						cover
-						hoverable
-						clickable
-						css={{
-							bg: "$black",
-							w: "100%",
-							maxWidth: `${width - 7}px`,
-						}}
-						onClick={() => {
-							Router.push("/projects/ecommerce");
-						}}
-					>
-						<Card.Header
-							css={{ position: "absolute", zIndex: 1, top: 5 }}
-						>
-							<Col>
-								<Text
-									size={12}
-									weight="bold"
-									transform="uppercase"
-									color="black"
-								>
-									Javascript
-								</Text>
-								<Text h4 color="black">
-									Ecommerce Website
-								</Text>
-							</Col>
-						</Card.Header>
-						{/* <Card.Image
-							src="/images/Ecommerce.png"
-							height={340}
-							width={650}
-							alt="Card image background"
-						/> */}
-					</Card>
-				</Grid>
+
 				{/* Card 3 */}
 				<Grid xs={11} sm={5}>
 					<Card
@@ -147,6 +108,46 @@ export default function Projects({ width }) {
 								alt="Card example background"
 							/> */}
 						</Card.Body>
+					</Card>
+				</Grid>
+				<Grid xs={11} sm={5}>
+					<Card
+						className="ecommerce-card"
+						cover
+						hoverable
+						clickable
+						css={{
+							bg: "$black",
+							w: "100%",
+							maxWidth: `${width - 7}px`,
+						}}
+						onClick={() => {
+							Router.push("/projects/ecommerce");
+						}}
+					>
+						<Card.Header
+							css={{ position: "absolute", zIndex: 1, top: 5 }}
+						>
+							<Col>
+								<Text
+									size={12}
+									weight="bold"
+									transform="uppercase"
+									color="black"
+								>
+									Javascript
+								</Text>
+								<Text h4 color="black">
+									Ecommerce Website
+								</Text>
+							</Col>
+						</Card.Header>
+						{/* <Card.Image
+							src="/images/Ecommerce.png"
+							height={340}
+							width={650}
+							alt="Card image background"
+						/> */}
 					</Card>
 				</Grid>
 				{/* Card 4 */}

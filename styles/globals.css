@@ -170,18 +170,18 @@ pre {
 }
 /* sets image for portfolio card based on webp support */
 .no-webp .portfolio-card {
-	background-image: url(/images/portfolio.png);
-	background-size: cover;
-	background-position: center;
-	height: 400px;
+	background: url(/images/portfolio.png) no-repeat #ffff;
+	background-size: contain;
+	background-position: center bottom;
+	height: 300px;
 	width: 650px;
 }
 
 .webp .portfolio-card {
-	background-image: url(/images/portfolio.webp);
-	background-size: cover;
-	background-position: center;
-	height: 400px;
+	background: url(/images/portfolio.webp) no-repeat #ffff;
+	background-size: contain;
+	background-position: center bottom;
+	height: 300px;
 	width: 650px;
 }
 
@@ -202,20 +202,21 @@ pre {
 	width: 650px;
 }
 
-/* sets image for lane card based on webp support */
+
+/* sets image for ecommerce card based on webp support */
 .no-webp .ecommerce-card {
-	background-image: url(/images/Ecommerce.png);
-	background-size: cover;
-	background-position: center;
-	height: 400px;
+	background: url(/images/Ecommerce.webp) no-repeat #ffff;
+	background-size: contain;
+	background-position: center bottom;
+	height: 300px;
 	width: 650px;
 }
 
 .webp .ecommerce-card {
-	background-image: url(/images/Ecommerce.webp);
-	background-size: cover;
-	background-position: center;
-	height: 400px;
+	background: url(/images/Ecommerce.webp) no-repeat #ffff;
+	background-size: contain;
+	background-position: center bottom;
+	height: 300px;
 	width: 650px;
 }
 
