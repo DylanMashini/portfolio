@@ -17,7 +17,7 @@ export default function Projects({ width }) {
 					marginTop: "50px",
 				}}
 			>
-				My Projects
+				Select Portfolio
 			</h1>
 			<Grid.Container
 				gap={2}
@@ -27,7 +27,7 @@ export default function Projects({ width }) {
 				}}
 			>
 				{/* Card 1 */}
-				<Grid xs={12} sm={4}>
+				<Grid xs={12} sm={5}>
 					<Card
 						hoverable
 						clickable
@@ -144,7 +144,7 @@ export default function Projects({ width }) {
 					</Card>
 				</Grid>
 				{/* Card 4 */}
-				<Grid xs={12} sm={7}>
+				<Grid xs={12} sm={5}>
 					<Card
 						cover
 						hoverable
