@@ -81,7 +81,7 @@ export default function Contact() {
                             if (formText != '') {
                                 //call api
                                 console.log("fetching from" + `${server}/api/contact/`)
-                                fetch(`${server}/api/contact/`, {
+                                fetch(`${server}/api/contact`, {
                                     method: 'POST',
                                     headers: {
                                         'Content-Type': 'application/json'
