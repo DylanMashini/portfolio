@@ -40,7 +40,7 @@ export default function Home() {
 	return (
 		<div>
 			<Head>
-				<title>Dylan Mashini's Portfolio</title>
+				<title>Dylan Mashini</title>
 			</Head>
 			<div
 				style={{
