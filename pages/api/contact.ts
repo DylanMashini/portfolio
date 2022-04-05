@@ -8,8 +8,24 @@ export default async function Contact(req:NextApiRequest, res:NextApiResponse) {
     }
     const email = req.body.email;
     const message = req.body.message;
-    console.log(email)
-    res.status(200).json({
+    const sgMail = require('@sendgrid/mail')
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+    const msg = {
+    to: "dylanmashini123@gmail.com", // Change to your recipient
+    from: 'dylan@dylanmashini.com', // Change to your verified sender
+    subject: `Message from ${email}`,
+    text: '',
+    html: message,
+    }
+    sgMail.send(msg)
+    .then(() => {
+        console.log('Email sent')
+        res.status(200).json({
         message: "success"
     })
+    })
+    .catch((error) => {
+        console.error(error)
+    })
+    
 }  
