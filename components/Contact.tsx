@@ -80,6 +80,7 @@ export default function Contact() {
                         if (validateEmail(email)) {
                             if (formText != '') {
                                 //call api
+                                console.log("fetching from" + `${server}/api/contact/`)
                                 fetch(`${server}/api/contact/`, {
                                     method: 'POST',
                                     headers: {
