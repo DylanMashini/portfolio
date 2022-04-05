@@ -26,6 +26,7 @@ export default async function Contact(req:NextApiRequest, res:NextApiResponse) {
     })
     .catch((error) => {
         console.error(error)
+        res.status(200).json({error: error})
     })
     
 }  
