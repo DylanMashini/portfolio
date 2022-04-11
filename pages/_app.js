@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
 		type: "dark",
 		theme: {
 			colors: {
-				background: "#081B33",
+				background: "#000000",
 			},
 		},
 	});
