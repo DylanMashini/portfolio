@@ -60,7 +60,7 @@ a {
 	right: 0;
 	background-color: rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(10px);
-	height: 8%;
+	height: 8vh;
 	text-align: right;
 	z-index: 999;
 	display: flex;

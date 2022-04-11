@@ -1,5 +1,6 @@
 .scrollContainer {
 	overflow: hidden;
 	height: 100%;
+	scroll-padding-top: 8vh;
 }
 
