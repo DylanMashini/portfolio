@@ -122,7 +122,7 @@ export default function Projects({ width }) {
 							maxWidth: `${width - 7}px`,
 						}}
 						onClick={() => {
-							Router.push("/projects/ecommerce");
+							Router.push("/projects/ecommerce/#0");
 						}}
 					>
 						<Card.Header

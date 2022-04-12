@@ -51,6 +51,10 @@ a {
 }
 .clickable:hover {
 	cursor: pointer;
+	
+}
+.clickableul:hover {
+	text-decoration: underline;
 }
 
 .navbar {
