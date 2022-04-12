@@ -15,7 +15,7 @@ export default async function Contact(req:NextApiRequest, res:NextApiResponse) {
     to: "dylanmashini123@gmail.com", // Change to your recipient
     from: 'dylan@dylanmashini.com', // Change to your verified sender
     subject: `Message from ${email}`,
-    text: 'Message sent from a person',
+    text: 'Message sent from dylanmashini.com',
     html: message,
     }
     sgMail.send(msg)
