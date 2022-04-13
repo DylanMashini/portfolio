@@ -28,16 +28,25 @@ export default function Projects({ width }) {
 				}}
 			>
 				{/* Card 1 */}
+
+				{/* Card 2 */}
+
+				{/* Card 3 */}
 				<Grid xs={11} sm={5}>
 					<Card
-						className={"neat-card"}
+						className="boids-card"
+						cover
 						hoverable
 						clickable
-						cover
-						onClick={() => {
-							Router.push("/projects/neat-car-game");
+						css={{
+							w: "100%",
+							p: 0,
+							maxWidth: `${width - 7}px`,
 						}}
-						css={{ maxWidth: `${width - 7}px` }}
+						onClick={() => {
+							window.location.href =
+								"https://boids.dylanmashini.com";
+						}}
 					>
 						<Card.Header
 							css={{ position: "absolute", zIndex: 1, top: 5 }}
@@ -49,19 +58,15 @@ export default function Projects({ width }) {
 									transform="uppercase"
 									color="black"
 								>
-									Python
+									Javascript
 								</Text>
-								<Text h4 color="black">
-									AI Car Game
+								<Text h3 color="black">
+									3D Boids
 								</Text>
 							</Col>
 						</Card.Header>
 					</Card>
 				</Grid>
-
-				{/* Card 2 */}
-
-				{/* Card 3 */}
 				<Grid xs={11} sm={5}>
 					<Card
 						className="lane-card"
@@ -163,21 +168,17 @@ export default function Projects({ width }) {
 						</Card.Header>
 					</Card>
 				</Grid>
+
 				<Grid xs={11} sm={5}>
 					<Card
-						className="boids-card"
-						cover
+						className={"neat-card"}
 						hoverable
 						clickable
-						css={{
-							w: "100%",
-							p: 0,
-							maxWidth: `${width - 7}px`,
-						}}
+						cover
 						onClick={() => {
-							window.location.href =
-								"https://boids.dylanmashini.com";
+							Router.push("/projects/neat-car-game");
 						}}
+						css={{ maxWidth: `${width - 7}px` }}
 					>
 						<Card.Header
 							css={{ position: "absolute", zIndex: 1, top: 5 }}
@@ -189,10 +190,10 @@ export default function Projects({ width }) {
 									transform="uppercase"
 									color="black"
 								>
-									Javascript
+									Python
 								</Text>
-								<Text h3 color="black">
-									3D Boids
+								<Text h4 color="black">
+									AI Car Game
 								</Text>
 							</Col>
 						</Card.Header>

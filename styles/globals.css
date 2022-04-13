@@ -245,7 +245,7 @@ pre {
 	background: url(/images/boids.jpeg) no-repeat #ffff;
 	background-size: contain;
 	background-position: center bottom;
-	height: 300px;
+	height: 400px;
 	width: 650px;
 }
 
@@ -253,6 +253,6 @@ pre {
 	background: url(/images/boids.webp) no-repeat #ffff;
 	background-size: contain;
 	background-position: center bottom;
-	height: 300px;
+	height: 400px;
 	width: 650px;
 }
