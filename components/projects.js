@@ -2,8 +2,6 @@ import "../styles/projects.module.css";
 import { Card, Grid, Col, Row, Button, Text } from "@nextui-org/react";
 import Router from "next/router";
 import { useState } from "react";
-import Image from "next/image";
-import styles from "../styles/projects.module.css";
 
 export default function Projects({ width }) {
 	return (
@@ -58,12 +56,6 @@ export default function Projects({ width }) {
 								</Text>
 							</Col>
 						</Card.Header>
-						{/* <Card.Image
-							src="/images/Neat.png"
-							height={340}
-							width="100%"
-							alt="Card image background"
-						/> */}
 					</Card>
 				</Grid>
 
@@ -100,14 +92,6 @@ export default function Projects({ width }) {
 								</Text>
 							</Col>
 						</Card.Header>
-						<Card.Body>
-							{/* <Card.Image
-								src="/images/lane.png"
-								height={400}
-								width="100%"
-								alt="Card example background"
-							/> */}
-						</Card.Body>
 					</Card>
 				</Grid>
 				<Grid xs={11} sm={5}>
@@ -142,12 +126,6 @@ export default function Projects({ width }) {
 								</Text>
 							</Col>
 						</Card.Header>
-						{/* <Card.Image
-							src="/images/Ecommerce.png"
-							height={340}
-							width={650}
-							alt="Card image background"
-						/> */}
 					</Card>
 				</Grid>
 				{/* Card 4 */}
@@ -183,13 +161,41 @@ export default function Projects({ width }) {
 								</Text>
 							</Col>
 						</Card.Header>
-						<Card.Body>
-							{/* <Card.Image
-								src="/images/Portfolio.png"
-								height={400}
-								width="100%"
-							/> */}
-						</Card.Body>
+					</Card>
+				</Grid>
+				<Grid xs={11} sm={5}>
+					<Card
+						className="boids-card"
+						cover
+						hoverable
+						clickable
+						css={{
+							w: "100%",
+							p: 0,
+							maxWidth: `${width - 7}px`,
+						}}
+						onClick={() => {
+							window.location.href =
+								"https://boids.dylanmashini.com";
+						}}
+					>
+						<Card.Header
+							css={{ position: "absolute", zIndex: 1, top: 5 }}
+						>
+							<Col>
+								<Text
+									size={12}
+									weight="bold"
+									transform="uppercase"
+									color="black"
+								>
+									Javascript
+								</Text>
+								<Text h3 color="black">
+									3D Boids
+								</Text>
+							</Col>
+						</Card.Header>
 					</Card>
 				</Grid>
 			</Grid.Container>
