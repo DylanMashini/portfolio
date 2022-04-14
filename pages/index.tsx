@@ -88,9 +88,10 @@ export default function Home() {
 							transform: "translate(-50%, -50%)",
 							textAlign: "center",
 						}}
+						
 					>
-						<h1>Hi, I'm Dylan</h1>
-						<h3>
+						<h1 className="fade">Hi, I'm Dylan</h1>
+						<h3 className="fade4">
 							{mobile
 								? "I'm a full stack software developer."
 								: "I'm a full stack software developer based in Atlanta."}
