@@ -97,7 +97,7 @@ export default function Home() {
 								: "I'm a full stack software developer based in Atlanta."}
 						</h3>
 					</div>
-					<div className={"down-arrow"}>
+					<div className={"down-arrow fade"}>
 						<h3>Scroll Down to see more</h3>
 						<DownArrow></DownArrow>
 					</div>

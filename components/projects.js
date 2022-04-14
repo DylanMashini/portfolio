@@ -1,9 +1,21 @@
 import "../styles/projects.module.css";
 import { Card, Grid, Col, Row, Button, Text } from "@nextui-org/react";
 import Router from "next/router";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Projects({ width }) {
+
+	useEffect(() => {
+		let observer = new IntersectionObserver(function(entries) {
+			entries.forEach(entry => {
+			  if (entry.isIntersecting) {
+					entry.target.classList.add("fade");
+			  }
+			 
+			})
+		});
+		observer.observe(document.querySelector(".projectsTitle"));
+	})
 	return (
 		<div
 			id="projects"
@@ -13,6 +25,7 @@ export default function Projects({ width }) {
 			}}
 		>
 			<h1
+				className="projectsTitle"
 				style={{
 					textAlign: "center",
 					marginTop: "50px",
