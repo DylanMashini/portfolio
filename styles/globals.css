@@ -294,3 +294,6 @@ pre {
 	height: 400px;
 	width: 650px;
 }
+.hidden {
+	opacity: 0;
+}

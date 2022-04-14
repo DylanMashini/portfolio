@@ -9,6 +9,7 @@ export default function Projects({ width }) {
 		let observer = new IntersectionObserver(function(entries) {
 			entries.forEach(entry => {
 			  if (entry.isIntersecting) {
+					entry.target.classList.remove("hidden");
 					entry.target.classList.add("fade");
 			  }
 			 
@@ -25,7 +26,7 @@ export default function Projects({ width }) {
 			}}
 		>
 			<h1
-				className="projectsTitle"
+				className="projectsTitle hidden"
 				style={{
 					textAlign: "center",
 					marginTop: "50px",
