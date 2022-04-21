@@ -10,8 +10,8 @@ export default function orangeEclipse({ width, height }) {
 			xmlns="http://www.w3.org/2000/svg"
 			style={{
 				position: "absolute",
-				bottom: "-300",
-				right: "0px",
+				bottom: "-350px",
+				right: "-200px",
 			}}
 		>
 			<circle
