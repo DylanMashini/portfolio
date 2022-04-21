@@ -1,7 +1,7 @@
 import Link from "next/link";
-export default function downArrow() {
+export default function downArrow({link}) {
 	return (
-		<Link href="/#projects">
+		<Link href={link}>
 			<svg
 				width="50"
 				height="50"

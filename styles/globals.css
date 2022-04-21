@@ -297,3 +297,7 @@ pre {
 .hidden {
 	opacity: 0;
 }
+
+.ecommerce-projects {
+	margin-top: 100vh;
+}

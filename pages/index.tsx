@@ -99,7 +99,7 @@ export default function Home() {
 					</div>
 					<div className={"down-arrow fade"}>
 						<h3>Scroll Down to see more</h3>
-						<DownArrow></DownArrow>
+						<DownArrow link={'/#projects'} />
 					</div>
 				</div>
 			</div>
