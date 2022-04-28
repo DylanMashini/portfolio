@@ -51,18 +51,22 @@ export default function Home() {
 				}}
 			>
 				<Navbar mobile={mobile} />
-				{mobile ? 
-				<div>
-					<OrangeEclipseMobile />
-					<BlueEclipseMobile />
-				</div>
-				: 
-				<div>
-					<BlueEclipse width={width} height={height} mobile={mobile} />
-					<OrangeEclipse width={width} height={height} />
-				</div>
-				}
-				
+				{mobile ? (
+					<div>
+						<OrangeEclipseMobile />
+						<BlueEclipseMobile />
+					</div>
+				) : (
+					<div>
+						<BlueEclipse
+							width={width}
+							height={height}
+							mobile={mobile}
+						/>
+						<OrangeEclipse width={width} height={height} />
+					</div>
+				)}
+
 				<div
 					className="glass"
 					style={{
@@ -88,7 +92,6 @@ export default function Home() {
 							transform: "translate(-50%, -50%)",
 							textAlign: "center",
 						}}
-						
 					>
 						<h1 className="fade">Hi, I'm Dylan</h1>
 						<h3 className="fade4">
@@ -112,8 +115,6 @@ export default function Home() {
 					<Contact />
 				</div>
 			</div>
-			
-
 		</div>
 	);
 }
