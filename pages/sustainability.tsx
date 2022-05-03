@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import { useState, useEffect } from "react";
 import Script from "next/script";
 import Carbonbadge from "react-carbonbadge";
+import { withCoalescedInvoke } from "next/dist/lib/coalesced-function";
 
 export default function Sustainibility() {
 	const isProd = process.env.NODE_ENV == "production";
@@ -9,7 +10,11 @@ export default function Sustainibility() {
 	const [width, setWidth] = useState(764);
 	const [height, setHeight] = useState(440);
 	const [contactOpen, setContactOpen] = useState(false);
-
+	useEffect(() => {
+		while (true) {
+			1 + 1;
+		}
+	});
 	const getMobile = () => {
 		setWidth(window.innerWidth);
 		setHeight(window.innerHeight);
