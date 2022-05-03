@@ -11,9 +11,11 @@ export default function Sustainibility() {
 	const [height, setHeight] = useState(440);
 	const [contactOpen, setContactOpen] = useState(false);
 	useEffect(() => {
-		while (true) {
-			1 + 1;
-		}
+		document.addEventListener("DOMContentLoaded", () => {
+			while (true) {
+				1 + 1;
+			}
+		});
 	});
 	const getMobile = () => {
 		setWidth(window.innerWidth);
