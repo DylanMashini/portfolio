@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Navbar from "../../components/Navbar";
+import Layout from "../../components/Layout";
 
 export default function portfolio() {
 	const isProd = process.env.NODE_ENV == "production";
@@ -27,15 +27,16 @@ export default function portfolio() {
 	}
 	return (
 		<div>
-			<Navbar mobile={mobile} />
-			<div
-				className="project-page-content"
-				style={{ marginTop: "9vh" }}
-				id="0"
-			>
-				<h1>Portfolio Page</h1>
-				<h5>This page is currently under construction.</h5>
-			</div>
+			<Layout>
+				<div
+					className="project-page-content"
+					style={{ marginTop: "9vh" }}
+					id="0"
+				>
+					<h1>Portfolio Page</h1>
+					<h5>This page is currently under construction.</h5>
+				</div>
+			</Layout>
 		</div>
 	);
 }

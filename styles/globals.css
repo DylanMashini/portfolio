@@ -298,3 +298,14 @@ pre {
 .hidden {
 	opacity: 0;
 }
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	height: 4.5rem;
+	margin-top: 1em;
+	background-color: #3D4849;
+}
+.wrapper {
+	padding-bottom: 4.5rem;
+}

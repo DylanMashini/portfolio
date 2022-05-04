@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import { useState, useEffect } from "react";
 import Script from "next/script";
 import Carbonbadge from "react-carbonbadge";
-import { withCoalescedInvoke } from "next/dist/lib/coalesced-function";
+import Layout from "../components/Layout";
 
 export default function Sustainibility() {
 	const isProd = process.env.NODE_ENV == "production";
@@ -30,57 +30,60 @@ export default function Sustainibility() {
 		});
 	}
 	return (
-		<div className="project-page">
-			<style jsx>
-				{`
-					a {
-						text-decoration: underline;
-					}
-					p {
-						width: 90%;
-						margin-left: 1%;
-					}
-				`}
-			</style>
-			<Navbar mobile={mobile} />
-			<div
-				className="project-page-content"
-				style={{
-					marginTop: "9vh",
-				}}
-			>
-				<h1>Website Sustainibilty</h1>
-				<p>
-					Computers have a{" "}
-					<a
-						target="_blank"
-						rel="noreferrer"
-						href="https://www.independent.co.uk/climate-change/ict-computers-climate-change-carbon-footprint-b1917767.html"
-					>
-						carbon footprint that is worse than air travel,
-					</a>
-					and with the software industry growing at a rate of{" "}
-					<a
-						target="_blank"
-						rel="noreferrer"
-						href="https://www.zippia.com/advice/tech-industry-statistics/#:~:text=What%20is%20the%20growth%20rate,)%20of%205%25%20through%202024."
-					>
-						5% anually
-					</a>
-					, it's important that software developers focus on the
-					enviormental impacts of their decisions. That's one of the
-					reasons that all of my websites are built with the{" "}
-					<a
-						href="https://jamstack.org/"
-						target="_blank"
-						rel="noreferrer"
-					>
-						jamstack framwork.
-					</a>
-					This is one of the most sustainible frameworks out there,
-				</p>
+		<Layout>
+			<div className="project-page">
+				<style jsx>
+					{`
+						a {
+							text-decoration: underline;
+						}
+						p {
+							width: 90%;
+							margin-left: 1%;
+						}
+					`}
+				</style>
+
+				<div
+					className="project-page-content"
+					style={{
+						marginTop: "9vh",
+					}}
+				>
+					<h1>Website Sustainibilty</h1>
+					<p>
+						Computers have a{" "}
+						<a
+							target="_blank"
+							rel="noreferrer"
+							href="https://www.independent.co.uk/climate-change/ict-computers-climate-change-carbon-footprint-b1917767.html"
+						>
+							carbon footprint that is worse than air travel,
+						</a>
+						and with the software industry growing at a rate of{" "}
+						<a
+							target="_blank"
+							rel="noreferrer"
+							href="https://www.zippia.com/advice/tech-industry-statistics/#:~:text=What%20is%20the%20growth%20rate,)%20of%205%25%20through%202024."
+						>
+							5% anually
+						</a>
+						, it's important that software developers focus on the
+						enviormental impacts of their decisions. That's one of
+						the reasons that all of my websites are built with the{" "}
+						<a
+							href="https://jamstack.org/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							jamstack framwork.
+						</a>
+						This is one of the most sustainible frameworks out
+						there,
+					</p>
+				</div>
+				<Carbonbadge darkMode={true} />
 			</div>
-			<Carbonbadge darkMode={true} />
-		</div>
+		</Layout>
 	);
 }
