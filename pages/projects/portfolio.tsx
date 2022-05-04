@@ -27,7 +27,7 @@ export default function portfolio() {
 	}
 	return (
 		<div>
-			<Layout>
+			<Layout mobile={mobile}>
 				<div
 					className="project-page-content"
 					style={{ marginTop: "9vh" }}

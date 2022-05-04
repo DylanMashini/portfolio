@@ -30,7 +30,7 @@ export default function Sustainibility() {
 		});
 	}
 	return (
-		<Layout>
+		<Layout mobile={mobile}>
 			<div className="project-page">
 				<style jsx>
 					{`
