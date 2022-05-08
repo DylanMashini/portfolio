@@ -41,9 +41,6 @@ export default function Home() {
 	return (
 		<Layout mobile={mobile}>
 			<div>
-				<Head>
-					<title>Dylan Mashini Portfolio</title>
-				</Head>
 				<div
 					style={{
 						position: "relative",
