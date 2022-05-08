@@ -112,6 +112,18 @@ export default function Lane() {
 						the white ones boardering nonwhite pixels to an array.{" "}
 					</p>
 				</div>
+				<h3>
+					Unfortunately, at the moment running pygame in the browser
+					is difficult, i'm working on solution that uses html5 canvas
+					and pyscript, but in the meantime you can{" "}
+					<a
+						href="https://github.com/DylanMashini/Neat-Car-Game"
+						target={"_blank"}
+						rel="noopener noreferrer"
+					>
+						checkout the repository on github.
+					</a>{" "}
+				</h3>
 			</Layout>
 		</div>
 	);
