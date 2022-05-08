@@ -72,14 +72,16 @@ export default function Sustainibility() {
 						enviormental impacts of their decisions. That's one of
 						the reasons that all of my websites are built with the{" "}
 						<a
-							href="https://jamstack.org/"
+							href="https://nextjs.org/"
 							target="_blank"
 							rel="noreferrer"
 						>
-							jamstack framwork.
-						</a>
-						This is one of the most sustainible frameworks out
-						there,
+							NextJs.
+						</a>{" "}
+						This is sustainible because most pages are rendered at
+						build time, preventing energy intensive rendering on
+						each request, and it's a lightweight framework meaning
+						less data is transfered over the wire.
 					</p>
 				</div>
 				<Carbonbadge darkMode={true} />

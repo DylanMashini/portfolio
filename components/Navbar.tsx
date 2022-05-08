@@ -60,8 +60,8 @@ export default function Navbar({ mobile }) {
 					<Link href="/#Projects">
 						<a>Projects</a>
 					</Link>
-					<Link href="/#about">
-						<a>About Me</a>
+					<Link href="/skills">
+						<a>Skills</a>
 					</Link>
 					<Link href="/#contact">
 						<a>Contact Me</a>
@@ -166,7 +166,9 @@ export default function Navbar({ mobile }) {
 							}}
 							checked={isDark}
 							size="sm"
+							// @ts-ignore
 							iconOn={<Moon filled />}
+							// @ts-ignore
 							iconOff={<Sun />}
 							onChange={() => {
 								setTheme(type === "light" ? "dark" : "light");
@@ -194,6 +196,7 @@ export default function Navbar({ mobile }) {
 	}
 	return (
 		<div className={isDark ? "navbar" : "navbar-light"}>
+			{/* @ts-ignore */}
 			<Grid.Container justify="left">
 				<Grid>
 					<Link href="/">
@@ -206,8 +209,8 @@ export default function Navbar({ mobile }) {
 					</Link>
 				</Grid>
 				<Grid>
-					<Link href="/#about">
-						<h3 className="nav-item">About Me</h3>
+					<Link href="/skills">
+						<h3 className="nav-item">Skills</h3>
 					</Link>
 				</Grid>
 				<Grid>
@@ -255,7 +258,9 @@ export default function Navbar({ mobile }) {
 					}}
 					checked={isDark}
 					size="sm"
+					// @ts-ignore
 					iconOn={<Moon filled />}
+					// @ts-ignore
 					iconOff={<Sun />}
 					onChange={() => {
 						setTheme(type === "light" ? "dark" : "light");
