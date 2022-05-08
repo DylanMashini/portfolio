@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
+import { useRouter } from "next/router";
 
 export default function Skills({ svg }) {
 	const isProd = process.env.NODE_ENV == "production";
@@ -15,6 +16,7 @@ export default function Skills({ svg }) {
 			setMobile(false);
 		}
 	};
+
 	if (!isProd) {
 		useEffect(() => {
 			getMobile();

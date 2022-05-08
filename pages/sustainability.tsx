@@ -70,7 +70,7 @@ export default function Sustainibility() {
 						</a>
 						, it's important that software developers focus on the
 						enviormental impacts of their decisions. That's one of
-						the reasons that all of my websites are built with the{" "}
+						the reasons that all of my websites are built with{" "}
 						<a
 							href="https://nextjs.org/"
 							target="_blank"
