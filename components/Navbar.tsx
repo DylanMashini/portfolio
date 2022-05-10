@@ -57,7 +57,7 @@ export default function Navbar({ mobile }) {
 					<Link href="/">
 						<a>Home</a>
 					</Link>
-					<Link href="/#Projects">
+					<Link href="/projects">
 						<a>Projects</a>
 					</Link>
 					<Link href="/skills">
@@ -204,7 +204,7 @@ export default function Navbar({ mobile }) {
 					</Link>
 				</Grid>
 				<Grid>
-					<Link href="/#projects">
+					<Link href="/projects">
 						<h3 className="nav-item">Projects</h3>
 					</Link>
 				</Grid>

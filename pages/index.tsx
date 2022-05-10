@@ -106,8 +106,25 @@ export default function Home() {
 				</div>
 				{/* </Layout> */}
 				<div>
-					<div className={"projects"}>
+					{/* <div className={"projects"}>
 						<Projects width={width} />
+					</div> */}
+					<div
+						className="projects"
+						style={{
+							textAlign: "center",
+							marginLeft: "10vw",
+							marginRight: "10vw",
+						}}
+					>
+						<h1>About Me</h1>
+						<p>
+							I have been programming for 4 years, and have lots
+							of expirince in python and javascript. I enjoy
+							programming and mountain biking in my free time. I
+							also am the Co-President of the Pope High School
+							Robotics Team, and do public fourm debate.
+						</p>
 					</div>
 					<div className={"bio"}>
 						{/* <Bio /> */}
