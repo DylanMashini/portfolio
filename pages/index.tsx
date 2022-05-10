@@ -116,15 +116,9 @@ export default function Home() {
 							marginLeft: "10vw",
 							marginRight: "10vw",
 						}}
+						id="about"
 					>
-						<h1>About Me</h1>
-						<p>
-							I have been programming for 4 years, and have lots
-							of experience in python and javascript. I enjoy
-							programming and mountain biking in my free time. I
-							also am the Co-President of the Pope High School
-							Robotics Team, and do public fourm debate.
-						</p>
+						<Bio mobile={mobile} />
 					</div>
 					<div className={"bio"}>
 						{/* <Bio /> */}
