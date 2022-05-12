@@ -3,4 +3,4 @@
 [🌎Live Website](https://dylanmashini.com/)
 
 ## Technologies used to build this site:
-![skills](https://skillicons.dev/icons?theme=dark&i=ts,js,nextjs,react,figma)
+![skills](https://skillicons.dev/icons?theme=dark&i=ts,nextjs,react,figma)
