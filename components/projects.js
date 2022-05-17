@@ -4,19 +4,17 @@ import Router from "next/router";
 import { useState, useEffect } from "react";
 
 export default function Projects({ width }) {
-
 	useEffect(() => {
-		let observer = new IntersectionObserver(function(entries) {
+		let observer = new IntersectionObserver(function (entries) {
 			entries.forEach(entry => {
-			  if (entry.isIntersecting) {
+				if (entry.isIntersecting) {
 					entry.target.classList.remove("hidden");
 					entry.target.classList.add("fade");
-			  }
-			 
-			})
+				}
+			});
 		});
 		observer.observe(document.querySelector(".projectsTitle"));
-	})
+	});
 	return (
 		<div
 			id="projects"
@@ -72,7 +70,7 @@ export default function Projects({ width }) {
 									transform="uppercase"
 									color="black"
 								>
-									Javascript
+									Rust
 								</Text>
 								<Text h3 color="black">
 									3D Boids
