@@ -1,8 +1,8 @@
-import Navbar from "../../components/Navbar";
+import Navbar from "../components/Navbar";
 import { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import Image from "next/image";
-import Layout from "../../components/Layout";
+import Layout from "../components/Layout";
 
 export default function Lane() {
 	const isProd = process.env.NODE_ENV == "production";
@@ -61,6 +61,7 @@ export default function Lane() {
 						used open-cv to detect and draw lane lines on a road.
 						Here is a output video from it.
 					</p>
+					{/* @ts-ignore */}
 					<ReactPlayer
 						url={"https://vimeo.com/689504715"}
 						muted={true}

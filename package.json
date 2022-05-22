@@ -14,6 +14,7 @@
     "@sendgrid/mail": "^7.6.2",
     "boxicons": "^2.1.2",
     "next": "12.1.0",
+    "next-mdx-remote": "^4.0.3",
     "next-sitemap": "^2.5.17",
     "next-themes": "^0.1.1",
     "react": "17.0.2",
