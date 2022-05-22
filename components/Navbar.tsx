@@ -163,6 +163,7 @@ export default function Navbar({ mobile }) {
 								}}
 							/>
 						</a>
+						{/* @ts-ignore */}
 						<Switch
 							css={{
 								marginRight: "30px",
@@ -260,6 +261,7 @@ export default function Navbar({ mobile }) {
 						}}
 					/>
 				</a>
+				{/* @ts-ignore */}
 				<Switch
 					css={{
 						marginRight: "30px",
