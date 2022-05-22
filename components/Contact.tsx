@@ -83,6 +83,7 @@ export default function Contact() {
 										marginTop: "0vh",
 									}}
 								>
+									{/* @ts-ignore */}
 									<Textarea
 										bordered
 										labelPlaceholder="Message"
