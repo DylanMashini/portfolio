@@ -108,6 +108,7 @@ export default function Contact() {
 								alignContent: "center",
 							}}
 						>
+							{/* @ts-ignore */}
 							<Button
 								color={buttonColor}
 								style={{ width: "20vw", marginTop: "3vh" }}
