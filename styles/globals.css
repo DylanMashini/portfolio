@@ -124,6 +124,13 @@ a {
 .project-page {
 	position: absolute;
 }
+.project-page-content {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.project-page-content a {
+	text-decoration: underline;
+}
 .bio {
 	position: relative;
 

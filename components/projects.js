@@ -56,8 +56,7 @@ export default function Projects({ width }) {
 							maxWidth: `${width - 7}px`,
 						}}
 						onClick={() => {
-							window.location.href =
-								"https://boids.dylanmashini.com";
+							Router.push("/projects/boids");
 						}}
 					>
 						<Card.Header

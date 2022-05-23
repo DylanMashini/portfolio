@@ -1,6 +1,6 @@
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 import { useState, useEffect } from "react";
-import ProjectContent from "../components/projects";
+import ProjectContent from "../../components/projects";
 
 export default function Projects() {
 	const isProd = process.env.NODE_ENV == "production";

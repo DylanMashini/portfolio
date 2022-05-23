@@ -49,10 +49,12 @@ export default function Projects({ source }) {
 		Image: props => (
 			<div
 				style={{
-					width: "50vw",
 					marginLeft: "25vw",
 					marginRight: "25vw",
 					marginBottom: "2vh",
+					display: "flex",
+					alignItems: "center",
+					justifyContent: "center",
 				}}
 			>
 				<Image {...props} />
@@ -66,17 +68,6 @@ export default function Projects({ source }) {
 			}}
 			className="project-page"
 		>
-			<style jsx>
-				{`
-					a {
-						text-decoration: underline;
-					}
-					p {
-						width: 90%;
-						margin-left: 1%;
-					}
-				`}
-			</style>
 			<Layout mobile={mobile}>
 				<div className="project-page-content">
 					<MDXRemote {...source} components={components} />
