@@ -77,18 +77,29 @@ export default function Projects({ source }) {
 	);
 }
 export async function getStaticProps({ params }) {
-	const slug = params.slug;
-	const filePath = `./projects/${slug}.mdx`;
-	const content = await fs.readFileSync(filePath, "utf8");
-	const mdx = content;
-	const mdxSource = await serialize(mdx);
-	return {
-		props: {
-			source: mdxSource,
-		},
-	};
+	return new Promise((resolve, rejcet) => {
+		const slug = params.slug;
+		const projects = require("../../projects.json")["posts"];
+		fetch(projects.find(p => p.slug == slug)["url"])
+			.then(res => res.text())
+			.then(res => serialize(res))
+			.then(res => {
+				resolve({ props: { source: res } });
+			});
+	});
 }
 export async function getStaticPaths() {
+	return new Promise((resolve, reject) => {
+		const projects = require("../../projects.json")["posts"];
+		console.log(projects);
+		console.log(projects[0]);
+		resolve({
+			paths: projects.map(project => {
+				return { params: { slug: project.slug } };
+			}),
+			fallback: false,
+		});
+	});
 	return new Promise((resolve, reject) => {
 		fs.readdir("./projects", (err, paths) => {
 			resolve({
@@ -99,14 +110,4 @@ export async function getStaticPaths() {
 			});
 		});
 	});
-	return {
-		paths: [
-			{
-				params: {
-					slug: "project-1",
-				},
-			},
-		],
-		fallback: true,
-	};
 }

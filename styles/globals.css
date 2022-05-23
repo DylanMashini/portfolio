@@ -127,6 +127,7 @@ a {
 .project-page-content {
 	margin-left: 5%;
 	margin-right: 5%;
+	width: 90vw;
 }
 .project-page-content a {
 	text-decoration: underline;
