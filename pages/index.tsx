@@ -1,15 +1,11 @@
 import BlueEclipse from "../components/shapes/blueEclipse";
 import OrangeEclipse from "../components/shapes/orangeEclipse";
-import Link from "next/link";
 import DownArrow from "../components/shapes/downArrow";
-import Navbar from "../components/Navbar";
-import Projects from "../components/projects";
 import { useState, useEffect } from "react";
 import Bio from "../components/Bio";
 import Contact from "../components/Contact";
 import OrangeEclipseMobile from "../components/shapes/orangeEclipseMobile";
 import BlueEclipseMobile from "../components/shapes/blueEclipseMobile";
-import Head from "next/head";
 import Layout from "../components/Layout";
 export default function Home() {
 	const isProd = process.env.NODE_ENV == "production";

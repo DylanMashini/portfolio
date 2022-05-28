@@ -289,7 +289,7 @@ pre {
 }
 
 .no-webp .boids-card {
-	background: url(/images/boids.jpeg) no-repeat #ffff;
+	background: url(/images/boids.jpg) no-repeat #ffff;
 	background-size: contain;
 	background-position: center bottom;
 	height: 400px;
