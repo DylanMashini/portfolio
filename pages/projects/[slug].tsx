@@ -72,23 +72,11 @@ export async function getStaticProps({ params }) {
 export async function getStaticPaths() {
   return new Promise((resolve, reject) => {
     const projects = require("../../projects.json")["posts"];
-    console.log(projects);
-    console.log(projects[0]);
     resolve({
       paths: projects.map((project) => {
         return { params: { slug: project.slug } };
       }),
       fallback: false,
-    });
-  });
-  return new Promise((resolve, reject) => {
-    fs.readdir("./projects", (err, paths) => {
-      resolve({
-        paths: paths.map((path) => {
-          return { params: { slug: path.split(".")[0] } };
-        }),
-        fallback: false,
-      });
     });
   });
 }
