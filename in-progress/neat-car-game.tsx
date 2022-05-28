@@ -1,6 +1,6 @@
-import Navbar from "../../components/Navbar";
+import Navbar from "../components/Navbar";
 import { useState, useEffect } from "react";
-import Layout from "../../components/Layout";
+import Layout from "../components/Layout";
 import Link from "next/link";
 import Script from "next/script";
 
