@@ -23,3 +23,26 @@
 	/>
 </a>
 
+# Neat Car Game
+
+## Video of Pretrained models (red 15 generations blue 20 generations)
+
+<ReactPlayer url={"https://vimeo.com/714988702"} muted={true} loop={true} playing={true} />
+
+## What are the Blue Lines?
+
+The blue lines are "radars" that detect if they hit the edge of the track. If the "radars" collide with the track at any point, it passes the distance from the car to the collision into the nueral network. 
+
+## What's happening?
+
+I created a pygame car game, where points are given every time the car runs over a "reward point" these reward points are after every turn. If a car touches the white, it dies. To encourage speed, if a car goes too slow it dies. These points are then fed into a genetic machine learning algorithim called NEAT that uses the points as fitness. This algorithim uses generations of 30 that all train in parellel. 
+
+## What is a genitic algorithim?
+
+### Genitic Algorithim vs Backpropigation 
+
+Rather than a traditional NN (nueral network) that uses backpropigation, genetic alogritims use populations of many NNs. What this means is that it starts off completely random, then it takes the best performing Nueral Networks, and creates a hybrid of them, taking their features and some random to create a new generation. This allows the benifitial adaptations to continue while the negative ones die out. 
+
+## What is NEAT doing?
+NEAT is a uniqe type of genitic algorithim because rather than just alterning the weights and biases based on the performace, it also modifies the topology of the nueral network. This gives the algorithim more control, and prevents the software engineer from having to find "perfect constants" that allow the AI to excell. 
+
