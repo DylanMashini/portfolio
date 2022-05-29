@@ -66,11 +66,9 @@ export default function Navbar({ mobile }) {
           <Link href="/#about">
             <a>About Me</a>
           </Link>
-          {/*
           <Link href="/#contact">
             <a>Contact Me</a>
           </Link>
-					*/}
         </StyledMenu>
       );
     };
@@ -222,13 +220,11 @@ export default function Navbar({ mobile }) {
             <h3 className="nav-item">About Me</h3>
           </Link>
         </Grid>
-        {/*
         <Grid>
           <Link href="/#contact">
             <h3 className="nav-item">Contact Me</h3>
           </Link>
         </Grid>
-				*/}
       </Grid.Container>
       <span
         style={{
