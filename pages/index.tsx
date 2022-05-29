@@ -90,6 +90,7 @@ export default function Home() {
           {/* <div className={"projects"}>
 						<Projects width={width} />
 					</div> */}
+          {/*
           <div
             className="projects"
             style={{
@@ -101,6 +102,7 @@ export default function Home() {
           >
             <Bio mobile={mobile} />
           </div>
+					*/}
           <div className={"bio"}>
             {/* <Bio /> */}
             <Contact />
