@@ -80,35 +80,6 @@ export default function Projects({ width }) {
           project="AI Car Game"
           href="/projects/neat-car-game"
         />
-        {/* Card 4 */}
-        <Grid xs={11} sm={5}>
-          <Card
-            className={"neat-card"}
-            hoverable
-            clickable
-            cover
-            onClick={() => {
-              Router.push("/projects/neat-car-game");
-            }}
-            css={{ maxWidth: `${width - 7}px` }}
-          >
-            <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
-              <Col>
-                <Text
-                  size={12}
-                  weight="bold"
-                  transform="uppercase"
-                  color="black"
-                >
-                  Python
-                </Text>
-                <Text h4 color="black">
-                  AI Car Game
-                </Text>
-              </Col>
-            </Card.Header>
-          </Card>
-        </Grid>
       </Grid.Container>
     </div>
   );
