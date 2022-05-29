@@ -25,7 +25,8 @@ export default function ProjectCard({
           css={{
             w: "100%",
             p: 0,
-            maxWidth: `${width - 7}px`,
+            // maxWidth: `${width - 7}px`,
+            maxWidth: "90vw",
           }}
           onClick={() => {
             router.push(href);
