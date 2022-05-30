@@ -6,6 +6,7 @@ import { useState } from "react";
 import getMobile from "../../mobile";
 import Image from "next/image";
 import ReactPlayer from "react-player";
+import fetch from "node-fetch";
 
 export default function Projects({ source }) {
   const [mobile, setMobile] = useState(false);
