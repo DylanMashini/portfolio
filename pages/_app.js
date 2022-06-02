@@ -38,8 +38,13 @@ function MyApp({ Component, pageProps }) {
 					/>
 				</Head>
 				<Script src="/modernizr-custom.js" />
-
 				<Component {...pageProps} />
+
+				<script
+					defer
+					src="https://static.cloudflareinsights.com/beacon.min.js"
+					data-cf-beacon='{"token": "3ba61def566b4a0189054f98e2c511ec"}'
+				></script>
 			</NextUIProvider>
 		</ThemeProvider>
 	);
