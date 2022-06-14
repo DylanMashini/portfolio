@@ -17,12 +17,12 @@ export default function Layout({
 			<Head>
 				<title>{title}</title>
 			</Head>
-			<div className="wrapper">
+			<div className={`wrapper ${mobile ? "mobile" : ""}`}>
 				<Navbar mobile={mobile} />
 				{children}
 			</div>
 
-			<Footer />
+			<Footer mobile={mobile} />
 		</div>
 	);
 }

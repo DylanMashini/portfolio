@@ -135,6 +135,7 @@ a {
 
   /* height: 20vh; */
   margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 .contactWrapper {
   display: flex;
@@ -305,14 +306,16 @@ pre {
 .footer {
   position: absolute;
   bottom: 0;
-  height: 4.5rem;
+  height: 7rem;
   margin-top: 1em;
   background-color: #3d4849;
 }
 .wrapper {
   padding-bottom: 4.5rem;
 }
-
+.wrapper.mobile {
+  padding-bottom: 10rem !important;
+}
 code {
   background: transparent;
 }
