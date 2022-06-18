@@ -32,7 +32,7 @@ export default function Skills({ svg }) {
 
 export async function getStaticProps() {
   const svg = await fetch(
-    "https://skillicons.dev/icons?theme=dark&perline=5&i=ts,js,rust,wasm,python,react,figma,mongodb,nextjs,vim"
+    "https://skillicons.dev/icons?theme=dark&perline=5&i=ts,js,rust,wasm,python,react,figma,mongodb,nextjs,vscode"
   ).then((res) => res.text());
   return { props: { svg: svg } };
 }
