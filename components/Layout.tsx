@@ -6,6 +6,7 @@ export default function Layout({
 	mobile,
 	children,
 	title = "Dylan Mashini's Portfolio",
+	description = "A Development Portfolio For Dylan Mashini",
 }) {
 	return (
 		<div
@@ -16,6 +17,7 @@ export default function Layout({
 		>
 			<Head>
 				<title>{title}</title>
+				<meta name="description" content={description} />
 			</Head>
 			<div className={`wrapper ${mobile ? "mobile" : ""}`}>
 				<Navbar mobile={mobile} />
