@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^12.2.2",
     "@nextui-org/react": "^1.0.0-beta.7",
     "@sendgrid/mail": "^7.6.2",
     "boxicons": "^2.1.2",
