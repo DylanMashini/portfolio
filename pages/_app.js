@@ -1,12 +1,11 @@
 import "../styles/globals.css";
-import { useState } from "react";
+import { useState } from "preact/compat";
 import { ThemeProvider } from "next-themes";
 import { NextUIProvider, createTheme } from "@nextui-org/react";
-import { Grid, Spacer, Switch, useTheme } from "@nextui-org/react";
 import Head from "next/head";
 import Script from "next/script";
+
 function MyApp({ Component, pageProps }) {
-	const [isDark, setIsDark] = useState(true);
 	const lightTheme = createTheme({
 		type: "light",
 		theme: {},

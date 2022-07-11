@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "preact/compat";
 import Script from "next/script";
 import Carbonbadge from "react-carbonbadge";
 import Layout from "../components/Layout";

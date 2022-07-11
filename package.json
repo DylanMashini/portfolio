@@ -1,36 +1,44 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "postbuild": "next-sitemap",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@next/bundle-analyzer": "^12.2.2",
-    "@nextui-org/react": "^1.0.0-beta.7",
-    "@sendgrid/mail": "^7.6.2",
-    "boxicons": "^2.1.2",
-    "next": "12.1.0",
-    "next-mdx-remote": "^4.0.3",
-    "next-sitemap": "^2.5.17",
-    "next-themes": "^0.1.1",
-    "node-fetch": "^3.2.4",
-    "react": "17.0.2",
-    "react-carbonbadge": "^1.0.1",
-    "react-dom": "17.0.2",
-    "react-gist": "^1.2.4",
-    "react-player": "^2.9.0",
-    "styled-components": "^5.3.3"
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.21",
-    "@types/react": "^17.0.40",
-    "eslint": "8.11.0",
-    "eslint-config-next": "12.1.0",
-    "typescript": "^4.6.2"
-  }
+	"name": "portfolio",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"postbuild": "next-sitemap",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@mdx-js/loader": "^2.1.2",
+		"@mdx-js/react": "npm:@mdx-js/preact",
+		"@next/bundle-analyzer": "^12.2.2",
+		"@nextui-org/react": "^1.0.0-beta.7",
+		"@sendgrid/mail": "^7.6.2",
+		"boxicons": "^2.1.2",
+		"gray-matter": "^4.0.3",
+		"next": "^12.2.2",
+		"next-mdx-remote": "^4.0.3",
+		"next-plugin-preact": "^3.0.7",
+		"next-sitemap": "^2.5.17",
+		"next-themes": "^0.1.1",
+		"node-fetch": "^3.2.4",
+		"preact": "^10.9.0",
+		"preact-markdown": "^2.1.0",
+		"preact-render-to-string": "^5.2.0",
+		"react": "npm:@preact/compat",
+		"react-carbonbadge": "^1.0.1",
+		"react-dom": "npm:@preact/compat",
+		"react-gist": "^1.2.4",
+		"react-player": "^2.9.0",
+		"react-ssr-prepass": "npm:preact-ssr-prepass",
+		"styled-components": "^5.3.3"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.21",
+		"@types/react": "^17.0.40",
+		"eslint": "8.11.0",
+		"eslint-config-next": "12.1.0",
+		"typescript": "^4.6.2"
+	}
 }

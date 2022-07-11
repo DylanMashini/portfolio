@@ -122,6 +122,15 @@ a {
 .project-page {
   position: absolute;
 }
+.project-page a {
+  text-decoration: underline;
+}
+
+.project-page p {
+  width: 90%;
+  margin-left: 1%;
+}
+
 .project-page-content {
   margin-left: 5%;
   margin-right: 5%;
@@ -311,7 +320,7 @@ pre {
   background-color: #3d4849;
 }
 .wrapper {
-  padding-bottom: 4.5rem;
+  padding-bottom: 8rem;
 }
 .wrapper.mobile {
   padding-bottom: 10rem !important;

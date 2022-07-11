@@ -1,8 +1,9 @@
+import { h } from "preact";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import fs from "fs";
 import Layout from "../../components/Layout";
-import { useState } from "react";
+import { useEffect, useState } from "preact/compat";
 import getMobile from "../../mobile";
 import Image from "next/image";
 import ReactPlayer from "react-player";
@@ -10,6 +11,10 @@ import fetch from "node-fetch";
 
 export default function Projects({ source }) {
 	const [mobile, setMobile] = useState(false);
+	const [blog, setBlog] = useState(null);
+	useEffect(() => {
+		setBlog(null);
+	});
 	const changeMobile = (value: boolean) => {
 		setMobile(value);
 	};

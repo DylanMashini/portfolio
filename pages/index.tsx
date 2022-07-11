@@ -2,7 +2,7 @@ import BlueEclipse from "../components/shapes/blueEclipse";
 import OrangeEclipse from "../components/shapes/orangeEclipse";
 import DownArrow from "../components/shapes/downArrow";
 import getMobile from "../mobile";
-import { useState } from "react";
+import { useState } from "preact/compat";
 import Bio from "../components/Bio";
 import Contact from "../components/Contact";
 import OrangeEclipseMobile from "../components/shapes/orangeEclipseMobile";
