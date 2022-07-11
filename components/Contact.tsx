@@ -1,6 +1,6 @@
 import { Input, Button, Textarea } from "@nextui-org/react";
 import Router from "next/router";
-import { useState } from "react";
+import { useState } from "preact/compat";
 import server from "../server";
 export default function Contact({ mobile }: { mobile: boolean }) {
 	type color =
