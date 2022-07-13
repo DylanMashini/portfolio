@@ -37,6 +37,10 @@ function MyApp({ Component, pageProps }) {
 					/>
 				</Head>
 				<Script src="/modernizr-custom.js" />
+				<noscript>
+					Please enable javascript for this website to function
+					properly
+				</noscript>
 				<Component {...pageProps} />
 
 				<script
