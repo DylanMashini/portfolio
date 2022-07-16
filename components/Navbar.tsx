@@ -124,7 +124,11 @@ export default function Navbar({ mobile }) {
 		const Burger = ({ open, setOpen }) => {
 			return (
 				<div>
-					<StyledBurger open={open} onClick={() => setOpen(!open)}>
+					<StyledBurger
+						open={open}
+						onClick={() => setOpen(!open)}
+						title="Navigation"
+					>
 						<div />
 						<div />
 						<div />
