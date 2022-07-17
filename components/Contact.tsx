@@ -46,7 +46,7 @@ export default function Contact({ mobile }: { mobile: boolean }) {
 				<div className={fullSize ? "contact full" : "contact"}>
 					<div>
 						<h3>Contact Me</h3>
-						<div style={{ width: formWidth }}>
+						<div style={{ width: formWidth, margin: "0 auto" }}>
 							<Input
 								bordered
 								labelPlaceholder="Email"
