@@ -32,18 +32,6 @@ export default function Sustainibility() {
 	return (
 		<Layout mobile={mobile}>
 			<div className="project-page">
-				<style jsx>
-					{`
-						a {
-							text-decoration: underline;
-						}
-						p {
-							width: 90%;
-							margin-left: 1%;
-						}
-					`}
-				</style>
-
 				<div
 					className="project-page-content"
 					style={{
