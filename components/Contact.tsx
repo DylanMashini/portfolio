@@ -46,59 +46,48 @@ export default function Contact({ mobile }: { mobile: boolean }) {
 				<div className={fullSize ? "contact full" : "contact"}>
 					<div>
 						<h3>Contact Me</h3>
-
-						<Input
-							bordered
-							labelPlaceholder="Email"
-							color={formColor ? "error" : "default"}
-							helperText={helperText}
-							css={{
-								marginTop: "10%",
-								marginBottom: "10%",
-							}}
-							width={formWidth}
-							value={email}
-							onChange={e => {
-								setEmail(e.target.value);
-								setFormColor(false);
-								if (!showElements) {
-									setFullSize(true);
-									setTimeout(() => {
-										setShowElements(true);
-										Router.push("/#contact");
-									}, 280);
-								}
-							}}
-						/>
-						{showElements ? (
-							<div>
-								<div
-									style={{
-										marginTop: "0vh",
-										width: formWidth,
-										display: "flex",
-										justifyContent: "center",
-										alignItems: "center",
+						<div style={{ width: formWidth }}>
+							<Input
+								bordered
+								labelPlaceholder="Email"
+								color={formColor ? "error" : "default"}
+								helperText={helperText}
+								css={{
+									marginTop: "10%",
+									marginBottom: "10%",
+								}}
+								fullWidth
+								// width={formWidth}
+								value={email}
+								onChange={e => {
+									setEmail(e.target.value);
+									setFormColor(false);
+									if (!showElements) {
+										setFullSize(true);
+										setTimeout(() => {
+											setShowElements(true);
+											Router.push("/#contact");
+										}, 280);
+									}
+								}}
+							/>
+							{showElements ? (
+								<Textarea
+									fullWidth
+									bordered
+									labelPlaceholder="Message"
+									helperText={formHelperText}
+									color={formColor2 ? "error" : "default"}
+									minRows={10}
+									value={formText}
+									css={{ marginTop: "3vh" }}
+									onChange={e => {
+										setFormText(e.target.value);
+										setFormColor2(false);
 									}}
-								>
-									{/* @ts-ignore */}
-									<Textarea
-										fullWidth
-										bordered
-										labelPlaceholder="Message"
-										helperText={formHelperText}
-										color={formColor2 ? "error" : "default"}
-										minRows={10}
-										value={formText}
-										css={{ marginTop: "3vh" }}
-										onChange={e => {
-											setFormText(e.target.value);
-											setFormColor2(false);
-										}}
-									/>
-								</div>
-							</div>
-						) : null}
+								/>
+							) : null}
+						</div>
 						<div
 							style={{
 								width: "100%",
