@@ -35,4 +35,4 @@ yarn-error.log*
 .vercel
 
 # Sitemaps
-sitemap-*.xml
+sitemap-0.xml
