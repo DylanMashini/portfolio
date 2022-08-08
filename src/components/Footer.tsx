@@ -21,7 +21,7 @@ export default function Footer({ mobile }: { mobile: boolean }) {
 				>
 					This site is <a href="/sustainability">made sustainibly</a>{" "}
 				</h5>
-				<Carbonbadge />
+				<Carbonbadge darkMode />
 			</div>
 		</div>
 	);
