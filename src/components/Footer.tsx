@@ -10,7 +10,7 @@ export default function Footer({ mobile }: { mobile: boolean }) {
 					alignItems: "center",
 					width: "100vw",
 					height: !mobile ? "4.5rem" : "7rem",
-					flexDirection: "row",
+					flexDirection: mobile ? "column" : "row",
 				}}
 			>
 				<h5
