@@ -24,7 +24,7 @@ export default function Projects() {
 				}}
 			>
 				<ProjectContent
-					width={(width - 0.2 * width) / 2}
+					width={(width - 0.1 * width) / 2}
 				></ProjectContent>
 			</div>
 		</Layout>
