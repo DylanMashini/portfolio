@@ -1,6 +1,7 @@
 import { Card, Grid, Col, Row, Button, Text } from "@nextui-org/react";
 import { useRouter } from "next/router";
 import { useEffect } from "preact/compat";
+import styles from "../styles/projects.module.css"
 
 export default function ProjectCard({
 	imageClassName,
@@ -18,7 +19,7 @@ export default function ProjectCard({
 		<div>
 			<Grid xs={11} sm={5}>
 				<Card
-					className={imageClassName}
+					className={styles[imageClassName]}
 					cover
 					hoverable
 					clickable
