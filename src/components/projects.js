@@ -22,6 +22,7 @@ export default function Projects({ width }) {
 			className="scrollContainer"
 			style={{
 				display: "inline-block",
+				maxWidth: `${width*2}px"
 			}}
 		>
 			<h1
