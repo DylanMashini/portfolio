@@ -210,6 +210,7 @@ export default function Boids({ skillIcons }) {
 					</p>
 					<h2>Different Versions</h2>
 					<p>Here's all the versions of the project I've made.</p>
+					<br />
 					<a
 						target="_blank"
 						rel="noopener noreferer"
@@ -217,7 +218,7 @@ export default function Boids({ skillIcons }) {
 					>
 						Rust/wasm multithreaded
 					</a>
-
+					<br />
 					<a
 						target="_blank"
 						rel="noopener noreferer"
@@ -225,7 +226,7 @@ export default function Boids({ skillIcons }) {
 					>
 						Rust/wasm singlethreaded
 					</a>
-
+					<br />
 					<a
 						target="_blank"
 						rel="noopener noreferer"
@@ -233,6 +234,7 @@ export default function Boids({ skillIcons }) {
 					>
 						TypeScript singlethreaded
 					</a>
+					<br />
 					<h2>Github Repo</h2>
 					<a
 						target="_blank"
