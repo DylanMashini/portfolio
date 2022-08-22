@@ -210,7 +210,6 @@ export default function Boids({ skillIcons }) {
 					</p>
 					<h2>Different Versions</h2>
 					<p>Here's all the versions of the project I've made.</p>
-					<br />
 					<a
 						target="_blank"
 						rel="noopener noreferer"
