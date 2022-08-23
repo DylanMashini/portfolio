@@ -48,11 +48,6 @@ export default function Projects({ width }) {
 						overflow: "hidden",
 					}}
 				>
-					{/* Card 1 */}
-
-					{/* Card 2 */}
-
-					{/* Card 3 */}
 					<ProjectCard
 						imageClassName="boids-card"
 						width={width}
