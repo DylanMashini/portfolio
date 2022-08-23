@@ -4,3 +4,105 @@
 	scroll-padding-top: 8vh;
 }
 
+
+/* sets image for portfolio card based on webp support */
+.no-webp.portfolio-card {
+  background: url(/images/Portfolio.png) no-repeat #ffff;
+  background-size: cover;
+  background-position: center bottom;
+  height: 300px;
+  width: 650px;
+}
+
+.webp.portfolio-card {
+  background: url(/images/portfolio.webp) no-repeat #ffff;
+  background-size: cover;
+  background-position: center bottom;
+  height: 300px;
+  width: 650px;
+}
+
+/* sets image for lane card based on webp support */
+.no-webp.lane-card {
+  background-image: url(/images/lane.png);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 650px;
+}
+
+.webp.lane-card {
+  background-image: url(/images/lane.webp);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 650px;
+}
+
+@media (max-width: 700px) {
+  /* sets image for ecommerce card based on webp support */
+  .no-webp.ecommerce-card {
+    background: url(/images/ecommerceMobile.jpg) no-repeat #ffff;
+    background-size: contain;
+    background-position: center bottom;
+    height: 300px;
+    width: 650px;
+  }
+
+  .webp.ecommerce-card {
+    background: url(/images/ecommerceMobile.webp) no-repeat #ffff;
+    background-size: contain;
+    background-position: center bottom;
+    height: 300px;
+    width: 650px;
+  }
+}
+@media (min-width: 700px) {
+  .no-webp.ecommerce-card {
+    background: url(/images/Ecommerce.jpg) no-repeat #ffff;
+    background-size: cover;
+    background-position: center bottom;
+    height: 300px;
+    width: 650px;
+  }
+
+  .webp.ecommerce-card {
+    background: url(/images/Ecommerce.webp) no-repeat #ffff;
+    background-size: cover;
+    background-position: center bottom;
+    height: 300px;
+    width: 650px;
+  }
+}
+/* sets image for neat card based on webp support */
+.no-webp.neat-card {
+  background-image: url(/images/Neat.png);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 650px;
+}
+
+.webp.neat-card {
+  background-image: url(/images/Neat.webp);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 650px;
+}
+
+.no-webp.boids-card {
+  background: url(/images/boids.jpg) no-repeat #ffff;
+  background-size: contain;
+  background-position: center bottom;
+  height: 400px;
+  width: 650px;
+}
+
+.webp.boids-card {
+  background: url(/images/boids.webp) no-repeat #ffff;
+  background-size: contain;
+  background-position: center bottom;
+  height: 400px;
+  width: 650px;
+}

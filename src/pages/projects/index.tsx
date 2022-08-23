@@ -23,7 +23,9 @@ export default function Projects() {
 					marginBottom: "9vh",
 				}}
 			>
-				<ProjectContent width={width}></ProjectContent>
+				<ProjectContent
+					width={(width - 0.1 * width) / 2}
+				></ProjectContent>
 			</div>
 		</Layout>
 	);

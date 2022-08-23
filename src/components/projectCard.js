@@ -1,6 +1,7 @@
 import { Card, Grid, Col, Row, Button, Text } from "@nextui-org/react";
 import { useRouter } from "next/router";
-import { useEffect } from "preact/compat";
+import { useEffect, useState } from "preact/compat";
+import styles from "../styles/projects.module.css";
 
 export default function ProjectCard({
 	imageClassName,
@@ -9,23 +10,27 @@ export default function ProjectCard({
 	project,
 	href,
 }) {
+	const [webp, setWebp] = useState(true);
 	const router = useRouter();
 	useEffect(() => {
 		router.prefetch(href);
-	});
+		if (window.document.body.className.includes("no-webp")) setWebp(false);
+	}, []);
 
 	return (
 		<div>
 			<Grid xs={11} sm={5}>
 				<Card
-					className={imageClassName}
+					className={`${styles[imageClassName]} ${
+						webp ? styles["webp"] : styles["no-webp"]
+					}`}
 					cover
 					hoverable
 					clickable
 					css={{
 						w: "100%",
 						p: 0,
-						// maxWidth: `${width - 7}px`,
+						minWidth: `${width - 7 / 2}px`,
 						maxWidth: "90vw",
 					}}
 					onClick={() => {

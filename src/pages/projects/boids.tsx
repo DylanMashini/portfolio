@@ -217,7 +217,7 @@ export default function Boids({ skillIcons }) {
 					>
 						Rust/wasm multithreaded
 					</a>
-
+					<br />
 					<a
 						target="_blank"
 						rel="noopener noreferer"
@@ -225,7 +225,7 @@ export default function Boids({ skillIcons }) {
 					>
 						Rust/wasm singlethreaded
 					</a>
-
+					<br />
 					<a
 						target="_blank"
 						rel="noopener noreferer"
@@ -233,6 +233,7 @@ export default function Boids({ skillIcons }) {
 					>
 						TypeScript singlethreaded
 					</a>
+					<br />
 					<h2>Github Repo</h2>
 					<a
 						target="_blank"
