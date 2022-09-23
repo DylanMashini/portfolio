@@ -28,7 +28,6 @@ export default function Contact({ mobile }: { mobile: boolean }) {
   const [formHelperText, setFormHelperText] = useState("");
   const [formColor2, setFormColor2] = useState(false);
   const [buttonColor, setButtonColor] = useState<color>("default");
-  const formWidth = mobile ? "200px" : "300px";
   const validateEmail = (input) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(input);
