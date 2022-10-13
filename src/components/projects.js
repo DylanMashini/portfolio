@@ -50,18 +50,18 @@ export default function Projects({ width }) {
           }}
         >
           <ProjectCard
-            imageClassName={"ecommerce-card"}
-            width={width}
-            tech="javascript"
-            project="Ecommerce Website"
-            href="https://dncnutrition.com/"
-          />
-          <ProjectCard
             imageClassName={"my-green-earth-card"}
             width={width}
             tech={"javascript"}
             project="Portfolio Page"
             href="/projects/portfolio"
+          />
+          <ProjectCard
+            imageClassName={"ecommerce-card"}
+            width={width}
+            tech="javascript"
+            project="Ecommerce Website"
+            href="https://dncnutrition.com/"
           />
           <ProjectCard
             imageClassName="boids-card"
