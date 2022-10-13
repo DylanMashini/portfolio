@@ -1,16 +1,15 @@
 .scrollContainer {
-	overflow: hidden;
-	height: 100%;
-	scroll-padding-top: 8vh;
+  overflow: hidden;
+  height: 100%;
+  scroll-padding-top: 8vh;
 }
-
 
 /* sets image for portfolio card based on webp support */
 .no-webp.portfolio-card {
   background: url(/images/Portfolio.png) no-repeat #ffff;
   background-size: cover;
   background-position: center bottom;
-  height: 300px;
+  height: 400px;
   width: 650px;
 }
 
@@ -18,7 +17,24 @@
   background: url(/images/portfolio.webp) no-repeat #ffff;
   background-size: cover;
   background-position: center bottom;
-  height: 300px;
+  height: 400px;
+  width: 650px;
+}
+
+/* sets image for portfolio card based on webp support */
+.no-webp.my-green-earth-card {
+  background: url(/images/green.png) no-repeat #ffff;
+  background-size: cover;
+  background-position: center bottom;
+  height: 400px;
+  width: 650px;
+}
+
+.webp.my-green-earth-card {
+  background: url(/images/green.webp) no-repeat #ffff;
+  background-size: cover;
+  background-position: center bottom;
+  height: 400px;
   width: 650px;
 }
 
@@ -45,7 +61,7 @@
     background: url(/images/ecommerceMobile.jpg) no-repeat #ffff;
     background-size: contain;
     background-position: center bottom;
-    height: 300px;
+    height: 400px;
     width: 650px;
   }
 
@@ -53,7 +69,7 @@
     background: url(/images/ecommerceMobile.webp) no-repeat #ffff;
     background-size: contain;
     background-position: center bottom;
-    height: 300px;
+    height: 400px;
     width: 650px;
   }
 }
@@ -62,7 +78,7 @@
     background: url(/images/Ecommerce.jpg) no-repeat #ffff;
     background-size: cover;
     background-position: center bottom;
-    height: 300px;
+    height: 400px;
     width: 650px;
   }
 
@@ -70,7 +86,7 @@
     background: url(/images/Ecommerce.webp) no-repeat #ffff;
     background-size: cover;
     background-position: center bottom;
-    height: 300px;
+    height: 400px;
     width: 650px;
   }
 }
