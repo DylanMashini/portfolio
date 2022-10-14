@@ -54,7 +54,7 @@ export default function Projects({ width }) {
             width={width}
             tech={"javascript"}
             project="My Green Earth Page"
-            href="https://mygreenearth.com/"
+            href="https://mygreenearth.org/"
           />
           <ProjectCard
             imageClassName={"ecommerce-card"}
