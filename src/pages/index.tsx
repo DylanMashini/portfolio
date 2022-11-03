@@ -55,7 +55,7 @@ export default function Home() {
 							<h3 className="fade4">
 								{mobile
 									? "I'm a full stack software developer."
-									: "I'm a full stack software developer based in Atlanta. (this is really me, i'm teaching you rn)"}
+									: "I'm a full stack software developer based in Atlanta. "}
 							</h3>
 						</div>
 						<div
