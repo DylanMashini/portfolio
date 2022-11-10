@@ -18,7 +18,7 @@ export default function Layout({
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta property="og:image" content="/api/og" />
+        {/* <meta property="og:image" content="/api/og" /> */}
       </Head>
       <div className={`wrapper ${mobile ? "mobile" : ""}`}>
         <Navbar mobile={mobile} />
