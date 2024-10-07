@@ -57,11 +57,11 @@ export default function Projects({ width }) {
             href="https://mygreenearth.org/"
           />
           <ProjectCard
-            imageClassName={"ecommerce-card"}
+            imageClassName={"js-interpreter-card"}
             width={width}
-            tech="javascript"
-            project="Ecommerce Website"
-            href="https://dncnutrition.com/"
+            tech={"rust"}
+            project="Javascript Interpreter"
+            href="https://interpreter.dylanmashini.com/"
           />
           <ProjectCard
             imageClassName="boids-card"
@@ -83,6 +83,13 @@ export default function Projects({ width }) {
             tech="python"
             project="AI Car Game"
             href="/projects/neat-car-game"
+          />
+          <ProjectCard
+            imageClassName={"ecommerce-card"}
+            width={width}
+            tech="javascript"
+            project="Ecommerce Website"
+            href="https://dncnutrition.com/"
           />
         </Grid.Container>
       </div>
