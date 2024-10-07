@@ -122,3 +122,19 @@
   height: 400px;
   width: 650px;
 }
+
+.no-webp.js-interpreter-card {
+  background: url(/images/boids.jpg) no-repeat #ffff;
+  background-size: contain;
+  background-position: center bottom;
+  height: 400px;
+  width: 650px;
+}
+
+.webp.js-interpreter-card {
+  background: url(/images/boids.webp) no-repeat #ffff;
+  background-size: contain;
+  background-position: center bottom;
+  height: 400px;
+  width: 650px;
+}
