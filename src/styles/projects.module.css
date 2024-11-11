@@ -125,7 +125,7 @@
 
 .no-webp.js-interpreter-card {
   background: url(/images/interpreter.jpg) no-repeat #ffff;
-  background-size: contain;
+  background-size: cover;
   background-position: center bottom;
   height: 400px;
   width: 650px;
@@ -133,7 +133,7 @@
 
 .webp.js-interpreter-card {
   background: url(/images/interpreter.webp) no-repeat #ffff;
-  background-size: contain;
+  background-size: cover;
   background-position: center bottom;
   height: 400px;
   width: 650px;
