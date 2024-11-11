@@ -124,7 +124,7 @@
 }
 
 .no-webp.js-interpreter-card {
-  background: url(/images/boids.jpg) no-repeat #ffff;
+  background: url(/images/interpreter.jpg) no-repeat #ffff;
   background-size: contain;
   background-position: center bottom;
   height: 400px;
@@ -132,7 +132,7 @@
 }
 
 .webp.js-interpreter-card {
-  background: url(/images/boids.webp) no-repeat #ffff;
+  background: url(/images/interpreter.webp) no-repeat #ffff;
   background-size: contain;
   background-position: center bottom;
   height: 400px;
